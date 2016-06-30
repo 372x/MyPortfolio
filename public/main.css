@@ -1,0 +1,376 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);.todo-container {
+  /*  position: relative; */
+  width: 500px;
+  /* height: auto;
+  left: 50%;
+  margin-left: -250px; 
+  margin-top: 10px;*/
+  margin: 5px auto;
+  margin-top: 20px;
+  font-family: 'Indie Flower', cursive;
+  background: turquoise;
+  padding: 20px;
+}
+
+.add-todo-container {
+  margin-bottom: 10px;
+}
+
+.add-todo-container .col-md-10 {
+  padding-left: 0;
+}
+
+.add-todo-container .col-md-2 {
+  padding-right: 0;
+  text-align: right;
+}
+
+.todo-container h1 {
+  color: green;
+  margin-left: 60px;
+  margin-bottom: 15px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+div.page-header {
+  position: absolute;
+  z-index: 1;
+  margin-left: 20px;
+  top: 0;
+}
+
+nav {
+  position: absolute;
+  z-index: 2;
+  top: 120px;
+  margin-left: 20px;
+}
+
+main {
+  margin-top: 150px;
+}
+
+div.footer {
+  position: relative;
+  width: 100%;
+  height: 75px;
+  background-color: purple;
+  /* top: 1000px;
+	font-color: black;
+	/* position: absolute;
+	z-index: 3; */
+}
+
+div.footer-text {
+  font-color: black;
+}
+
+.thumbnail {
+  width: 300px;
+}
+
+.thumbnail .thumbnail1 {
+  margin-left: 30px;
+}
+
+.row3 {
+  /* margin-top: 50px; */
+}
+
+.thumbnail-block {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/*  1) 72 dpi photos, 2) photos for testimonials 3) crop more of top off first group photo 
+
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");  */
+.container1-jumbo {
+  padding: 20px;
+  background-image: url("/images/mountains.jpg");
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.form-background {
+  background-color: #00BCFF;
+}
+
+form {
+  padding: 20px;
+  margin-left: 30px;
+  /* display: block;
+  align: center; */
+}
+
+/* container1 image, try as position:fixed height: 800px;
+  background: url(http://#.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+.jumbotron {
+  padding: 20px;
+  width: 47%;
+  /* background: white;   doesn't work 
+  opacity: .2; */
+  background-color: transparent !important;
+  margin-left: 90px;
+  color: white;
+}
+
+/* .jumbotron.jumbo-text {
+  color: white;
+} */
+.btn.pink {
+  background-color: pink;
+}
+
+.left-side-row2 .right-side-row2 {
+  /* border-right: 3px solid black; */
+  /* padding: 40px; */
+}
+
+.container2-row2 {
+  padding: 40px;
+  background-color: green;
+  color: white;
+  /* height: 300px; */
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.container2-text {
+  margin: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+
+.container3-row3 {
+  /* border-bottom: 6px solid green;
+  padding: 20px; */
+}
+
+.square-photo {
+  height: 200px;
+  width: 300px;
+  margin: auto;
+  border: 3px solid black;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.square-photo1 {
+  background-image: url("/images/46751907.jpg");
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.square-photo2 {
+  background-image: url("/images/4755400.jpg");
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.square-photo3 {
+  background-image: url("/images/48458965.jpg");
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.photo-text {
+  text-align: center;
+}
+
+button.learn-more {
+  margin: auto;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.container4-row4 {
+  padding: 20px;
+  background-color: green;
+  color: white;
+  /* height: 300px;  */
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: 2-px solid black;
+  background-color: white;
+  /* margin-left: 80px;
+  margin-top: 80px; 
+  text-align: center; */
+  margin: auto;
+  /* vertical-align: middle; */
+  display: block;
+  margin-top: 50px;
+  /* background-color: transparent !important; */
+}
+
+/*
+.circle1 {
+  background-image: url('/images/woman-testimonial.png');
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.circle2 {
+  background-image: url('/images/man-testimonial.png');
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+*/
+.testimonial {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 1em;
+  margin: auto;
+  /* vertical-align: middle; */
+  margin-bottom: 10px;
+}
+
+.container5-row4 {
+  /* height: 170px; */
+  background-color: #eee;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer-text {
+  padding: 20px 0px 20px 0px;
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+  /*  font-size: 1em;
+  text-align: center;
+  line-height: .5em;
+  margin-top: 20px;
+  margin-bottom: 20px; */
+}
+
+blockquote.style3 {
+  font: 18px/30px normal Tahoma, sans-serif;
+  padding-top: 22px;
+  margin: 5px;
+  /* background-image: url(images/openquote3.gif);*/
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: 65px;
+}
+
+blockquote.style3 span {
+  display: block;
+  /* background-image: url(images/closequote3.gif); */
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+h1 {
+  color: red;
+}
+
+.square {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: #63a1f2;
+  text-align: center;
+  line-height: 100px;
+  font-family: arial;
+  font-size: 42px;
+  transform: none;
+  transition: transform .5s;
+}
+
+.square-container {
+  perspective: 150px;
+  display: inline-block;
+}
+
+.square1:hover {
+  transform: skewX(45deg);
+  transition: transform .5s;
+}
+
+.square2:hover {
+  transform: rotate(45deg);
+  transition: transform .5s;
+}
+
+.square3:hover {
+  transform: scale(0.8, 0.5);
+  transition: transform .5s;
+}
+
+.square4:hover {
+  transform: rotateY(745deg) rotateX(45deg);
+  transition: transform .5s;
+}
+
+.square5:hover {
+  -webkit-transform: rotateX(45deg);
+  transform: rotateX(45deg);
+  transition: transform .5s;
+}
+
+.square6:hover {
+  transform: translate3d(20px, 50px, 100px);
+  /* move it this far X, Y, Z */
+  transition: transform .5s;
+}
+
+/* @import 'D3ProjectTestDrive'; */
+.search-container .photo {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.search-container .photo img {
+  width: 100%;
+}
+
+/* without SASS:
+.search-container .photo img {
+	width: 100%;
+}
+
+SASS allows us to do this nesting of css; SASS is part of webpack */
+video {
+  height: 240px;
+  width: 320px;
+}
+
+/*# sourceMappingURL=main.css.map*/
