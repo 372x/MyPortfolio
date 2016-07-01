@@ -15,12 +15,19 @@ div.page-header {
 	z-index: 1;
 	margin-left: 20px;
 	top: 0;
-}	
+	color: white;
+}
+
+header {
+	background-color: #8E6CCD;
+	padding: 30px;
+	margin: 30px 0 30px 20px;
+}
 
 nav {
 	position: absolute;
 	z-index: 2;
-	top: 120px;
+ 	top: 120px;
 	margin-left: 20px;
 }
 
