@@ -31,7 +31,7 @@
   margin-bottom: 15px;
 }
 
-/* To Do: change classes for the home-page containers and jumbotron so different from the landing page ones */
+/* To Do: change more of the classes for the home-page containers and jumbotron so different from the landing page ones */
 /* Header on home page */
 header {
   background-color: #8E6CCD;
@@ -59,7 +59,7 @@ header {
   color: purple;
 }  */
 /* Skill Sets on home page */
-.container2-row2.home-page {
+.container2-row2-home {
   padding: 40px;
   background-color: #8e6ccd;
   color: white;
@@ -69,6 +69,12 @@ header {
 .container7 {
   padding: 20px;
   background-color: #f69679;
+  color: white;
+}
+
+.footer.homepage {
+  padding: 10px;
+  background-color: #8e6ccd;
   color: white;
 }
 
@@ -153,14 +159,14 @@ div.footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;*/
-.jumbotron {
+.jumbotron.landing-page {
   padding: 20px;
   width: 47%;
   /* background: white;   doesn't work 
   opacity: .2; */
   background-color: transparent !important;
   margin-left: 90px;
-  color: white;
+  /* color: white; */
 }
 
 /* .jumbotron.jumbo-text {
@@ -341,7 +347,7 @@ ul {
   font-weight: bold;
 }
 
-.footer-text {
+.footer-text-landing-page {
   padding: 20px 0px 20px 0px;
   margin: 20px 0px 20px 0px;
   text-align: center;

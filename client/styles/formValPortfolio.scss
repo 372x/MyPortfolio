@@ -19,14 +19,14 @@
   -o-background-size: cover;
   background-size: cover;*/
 
-.jumbotron {
+.jumbotron.landing-page {
   padding: 20px;
   width: 47%;
   /* background: white;   doesn't work 
   opacity: .2; */
   background-color: transparent !important;
   margin-left: 90px;
-  color: white;
+  /* color: white; */
 }
 
 /* .jumbotron.jumbo-text {
@@ -209,7 +209,7 @@ ul {
   font-weight: bold;
 }
 
-.footer-text {
+.footer-text-landing-page {
   padding: 20px 0px 20px 0px;
   margin: 20px 0px 20px 0px;
   text-align: center;
