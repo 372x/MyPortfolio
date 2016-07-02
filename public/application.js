@@ -111,7 +111,7 @@
 	    // break;
 	
 	    case '/pages/project.html':
-	      // init the project javascript
+	      _pagesProject2['default'].init();
 	      break;
 	
 	    case '/pages/funnySquares.html':
@@ -10009,7 +10009,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"todo-container":"todo-container","add-todo-container":"add-todo-container","col-md-10":"col-md-10","col-md-2":"col-md-2","jumbotron":"jumbotron","home-page":"home-page","btn":"btn","pink":"pink","span":"span","purple":"purple","container2-row2-home":"container2-row2-home","container7":"container7","footer":"footer","homepage":"homepage","page-header":"page-header","container1-jumbo":"container1-jumbo","landing-page":"landing-page","form-background":"form-background","main":"main","first-name-error":"first-name-error","last-name-error":"last-name-error","email-error":"email-error","password-error":"password-error","password-confirm-error":"password-confirm-error","zipcode-name-error":"zipcode-name-error","required-text":"required-text","your-state":"your-state","left-side-row2":"left-side-row2","right-side-row2":"right-side-row2","container2-row2":"container2-row2","centered-text":"centered-text","container2-text":"container2-text","container3-row3":"container3-row3","square-photo":"square-photo","square-photo1":"square-photo1","square-photo2":"square-photo2","square-photo3":"square-photo3","photo-text":"photo-text","learn-more":"learn-more","container4-row4":"container4-row4","circle":"circle","testimonial":"testimonial","container5-row4":"container5-row4","footer-text-landing-page":"footer-text-landing-page","style3":"style3","square":"square","square-container":"square-container","square1":"square1","square2":"square2","square3":"square3","square4":"square4","square5":"square5","square6":"square6","search-container":"search-container","photo":"photo"};
+	module.exports = {"todo-container":"todo-container","add-todo-container":"add-todo-container","col-md-10":"col-md-10","col-md-2":"col-md-2","jumbotron":"jumbotron","home-page":"home-page","btn":"btn","pink":"pink","span":"span","purple":"purple","container-carousel":"container-carousel","container2-row2-home":"container2-row2-home","container7":"container7","footer":"footer","homepage":"homepage","page-header":"page-header","container1-jumbo":"container1-jumbo","landing-page":"landing-page","form-background":"form-background","main":"main","first-name-error":"first-name-error","last-name-error":"last-name-error","email-error":"email-error","password-error":"password-error","password-confirm-error":"password-confirm-error","zipcode-name-error":"zipcode-name-error","required-text":"required-text","your-state":"your-state","left-side-row2":"left-side-row2","right-side-row2":"right-side-row2","container2-row2":"container2-row2","centered-text":"centered-text","container2-text":"container2-text","container3-row3":"container3-row3","square-photo":"square-photo","square-photo1":"square-photo1","square-photo2":"square-photo2","square-photo3":"square-photo3","photo-text":"photo-text","learn-more":"learn-more","container4-row4":"container4-row4","circle":"circle","testimonial":"testimonial","container5-row4":"container5-row4","footer-text-landing-page":"footer-text-landing-page","style3":"style3","square":"square","square-container":"square-container","square1":"square1","square2":"square2","square3":"square3","square4":"square4","square5":"square5","square6":"square6","search-container":"search-container","photo":"photo"};
 
 /***/ },
 /* 3 */,
@@ -35853,11 +35853,30 @@
 
 /***/ },
 /* 182 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
-	var app = {};
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	
+	var _jquery = __webpack_require__(1);
+	
+	var _jquery2 = _interopRequireDefault(_jquery);
+	
+	__webpack_require__(168);
+	
+	var app = {
+	  init: function init() {
+	    /*   app.render();
+	     },
+	     render: function(){
+	       $('.carousel').carousel();   */
+	  }
+	};
+	
+	/*
+	$('.carousel').carousel();  */
+	
 	module.exports = app;
 
 /***/ },

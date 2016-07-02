@@ -32,7 +32,7 @@ $(function(){
     // break;
     
     case '/pages/project.html':
-      // init the project javascript
+      project.init();
     break;
     
     case '/pages/funnySquares.html':

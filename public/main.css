@@ -34,13 +34,14 @@
 /* To Do: change more of the classes for the home-page containers and jumbotron so different from the landing page ones */
 /* Header on home page */
 header {
-  background-color: #8E6CCD;
+  /* background-color: #8E6CCD; */
   padding: 30px;
   margin: 30px 0 30px 20px;
 }
 
 /* Jumbotron on home page */
 .jumbotron.home-page {
+  margin-top: 50px;
   padding: 20px;
   background-color: #f69679 !important;
   color: white !important;
@@ -57,6 +58,17 @@ header {
 
 /* .jumbotron.jumbo-text {
   color: purple;
+}  */
+/* Carousel */
+.container-carousel {
+  display: block;
+  padding: 50px;
+  margin: 50px;
+}
+
+/* Didn't change font size
+.carousel-caption.h3 {
+  font-size: 100px;
 }  */
 /* Skill Sets on home page */
 .container2-row2-home {
@@ -97,47 +109,47 @@ nav {
 
 /*
 main {
-	margin-top: 150px;
+  margin-top: 150px;
 }
 
 .main-image {
-	width: 100%;
-	height: auto;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 0;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
 .thumbnail {
-	width: 300px;
+  width: 300px;
 }
 
 .thumbnail .thumbnail1 {
-	margin-left: 30px;
+  margin-left: 30px;
 }
 
 .thumbnail-block {
-	width: 100%;
-	text-align: center;
-	margin-top: 100px;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .row3 {
-	margin-top: 50px;	
+  margin-top: 50px;   
 }
 
 div.footer-text {
-	font-color: black;
+  font-color: black;
 }
 
 div.footer {
-	position: relative;
-	width: 100%;
-	height: 75px;
-	background-color: purple;
+  position: relative;
+  width: 100%;
+  height: 75px;
+  background-color: purple;
 }
 */
 /*  1) 72 dpi photos, 2) photos for testimonials 3) crop more of top off first group photo 
