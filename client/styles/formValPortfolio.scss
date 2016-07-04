@@ -38,7 +38,7 @@
 }
 
 /* FORM properites */
-.form-background {
+.sign-up-form-background {
   background-color: #00BCFF;
 }
 
@@ -145,8 +145,12 @@ form {
 
 button.learn-more {
   margin: auto;
+  margin-top: 20px;
   margin-bottom: 20px;
   display: block;
+  background-color: #00BCFF;
+  font-weight: bold;
+  font-size: 1.25em;
 }
 
 /* Row 4 properties */
