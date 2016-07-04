@@ -139,6 +139,8 @@ form {
 
 .photo-text {
   text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 button.learn-more {
@@ -188,7 +190,7 @@ button.learn-more {
 .testimonial {
   font-family: 'Montserrat', sans-serif;
   color: white;
-  font-size: 1em;
+  font-size: 1.25em;
   margin: auto;
   /* vertical-align: middle; */
   margin-bottom: 10px; 
@@ -204,6 +206,9 @@ ul {
   list-style-type: none;
   text-align: center;
   font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+  /* margin-left: -10px; */
 }
 
 .footer-text-landing-page {
@@ -218,7 +223,7 @@ ul {
 }
 
 blockquote.style3 {
-  font: 18px/30px normal Tahoma, sans-serif;
+  font: 24px/30px normal Tahoma, sans-serif;
   padding-top: 22px;
   margin: 5px;
   /* background-image: url(images/openquote3.gif);*/
