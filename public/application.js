@@ -35914,7 +35914,7 @@
 	  // add form validation code from codepen:
 	  validateForm: function validateForm() {
 	    (0, _jquery2['default'])('form').submit(function () {
-	      (0, _jquery2['default'])('p').empty();
+	      (0, _jquery2['default'])('.error').empty();
 	      var firstName = (0, _jquery2['default'])('#first').val();
 	      var lastName = (0, _jquery2['default'])('#last').val();
 	      var email = (0, _jquery2['default'])('#email').val();

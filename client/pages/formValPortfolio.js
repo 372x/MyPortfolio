@@ -24,7 +24,7 @@ var app = {
 // add form validation code from codepen:
   validateForm: function(){
     $('form').submit(function(){
-      $('p').empty();
+      $('.error').empty();
       var firstName = $('#first').val();
       var lastName = $('#last').val();
       var email = $('#email').val();
