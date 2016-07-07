@@ -100,4 +100,3 @@ module.exports = app;
 
 // loop empty field validation?
 // pwConfirm error only on enter/tab key?
-// HTML & CSS: change error statement CSS to orange from red; change HTML for radio to 13-15, 16-18; make last name 'required' in HTML to show HTML5 validation?

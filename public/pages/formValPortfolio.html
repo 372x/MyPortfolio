@@ -1,4 +1,3 @@
-<!-- To Do: decide whether to keep second button; style buttons more; add 'address' to email label -->
 
 <!-- using rows with Bootstrap -->
 <!DOCTYPE html>
@@ -42,14 +41,14 @@
   	                <input type="text" class="form-control" id="last" placeholder="Last name"/>
   	              </div>
   	              <div class="form-group">
-  	                <label for="email">Email<span class="required-text">*required</span></label>
+  	                <label for="email">Email address<span class="required-text">*required</span></label>
   	                <p class="email-error"></p>
   	                <input type="email" class="form-control" id="email" placeholder="Email address"/>
   	              </div>
   	              <div class="form-group">
   	                <label for="password" class="password-label">Password<span class="required-text">*required</span></label>
   	                <p class="password-error"></p>
-  	                <input type="password" class="form-control" id="password" placeholder="Password"/>
+  	                <input type="password" class="form-control" id="password" placeholder="Password: please include at least one number, one lowercase letter, and one uppercase letter"/>
   	              </div>
   	              <div class="form-group">
   	                <label for="password-confirm" class="password-confirm-label">Please confirm your password<span class="required-text">*required</span></label>
@@ -59,8 +58,8 @@
   	              <div class="form-group">
   	                  <label for="radio">Age<span class="required-text">*required</span></label><br>
   	                  <p class="age-error"></p>
-  	                  <input type="radio" id="under-thirteen" name="age" value="under-thirteen" checked>  Under thirteen<br>
-  	                  <input type="radio" name="age" value="thirteen-or-older">  Thirteen or older<br>
+  	                  <input type="radio" id="under-thirteen" name="age" value="under-thirteen" checked>  13-15<br>
+  	                  <input type="radio" name="age" value="thirteen-or-older">  16-18<br>
   	              </div>
   	              <div class="form-group">  
   	                <label for="state" class="your-state" >State</label>
@@ -75,7 +74,7 @@
   	                <p class="zipcode-name-error"></p>
   	                <input type="text" class="form-control" id="zipcode" name="zipcode" placeholder="Zip code"/>
   	              </div>
-  	              <button type="submit" class="btn btn-submit" value="Submit" >Sign Up Here!</button>
+  	              <button type="submit" class="btn btn-primary btn-lg btn-submit-form" value="Submit" >Sign Up Here!</button> <!-- btn-submit-form -->
   	            </form>
   	          </div>
   	        </div>
@@ -108,9 +107,9 @@
   	    <div class="col-md-4 learn-more">
   	      <div class="square-photo square-photo2"></div>
   	      <p class="photo-text">Learn the latest technology</p>
-          <!-- keep or delete this second button and form? -->
+          <!--
   	      <button class="btn learn-more">Learn More!</button>
-  	      <form class="learn-more-form" action="" hidden></form>
+  	      <form class="learn-more-form" action="" hidden></form>  -->
   	    </div>
   	    <div class="col-md-4">
   	      <div class="square-photo square-photo3"></div>
@@ -156,7 +155,7 @@
   	        </ul>  
   	        <ul class="unstyled contact-text">Contact us:
   	          <li>800-555-5555</li>
-  	          <li>jane@CodingInTheRockies.com</li>
+  	          <li>jane AT CodingInTheRockies DOT com</li> <!-- delete? -->
   	        </ul>   
   	      </div>  
   	    </div>

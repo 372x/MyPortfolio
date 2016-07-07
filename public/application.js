@@ -10009,7 +10009,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"todo-container":"todo-container","add-todo-container":"add-todo-container","col-md-10":"col-md-10","col-md-2":"col-md-2","jumbotron":"jumbotron","home-page":"home-page","btn":"btn","pink":"pink","span":"span","purple":"purple","container-carousel":"container-carousel","container2-row2-home":"container2-row2-home","container7":"container7","footer":"footer","homepage":"homepage","page-header":"page-header","container1-jumbo":"container1-jumbo","landing-page":"landing-page","sign-up-form-background":"sign-up-form-background","main":"main","first-name-error":"first-name-error","last-name-error":"last-name-error","email-error":"email-error","password-error":"password-error","password-confirm-error":"password-confirm-error","zipcode-name-error":"zipcode-name-error","required-text":"required-text","your-state":"your-state","left-side-row2":"left-side-row2","right-side-row2":"right-side-row2","container2-row2":"container2-row2","centered-text":"centered-text","container2-text":"container2-text","container3-row3":"container3-row3","square-photo":"square-photo","square-photo1":"square-photo1","square-photo2":"square-photo2","square-photo3":"square-photo3","photo-text":"photo-text","learn-more":"learn-more","container4-row4":"container4-row4","circle":"circle","circle1":"circle1","circle2":"circle2","testimonial":"testimonial","container5-row4":"container5-row4","footer-text-landing-page":"footer-text-landing-page","style3":"style3","square":"square","square-container":"square-container","square1":"square1","square2":"square2","square3":"square3","square4":"square4","square5":"square5","square6":"square6","search-container":"search-container","photo":"photo"};
+	module.exports = {"todo-container":"todo-container","add-todo-container":"add-todo-container","col-md-10":"col-md-10","col-md-2":"col-md-2","jumbotron":"jumbotron","home-page":"home-page","btn-homepage":"btn-homepage","btn":"btn","span":"span","purple":"purple","container-carousel":"container-carousel","container2-row2-home":"container2-row2-home","container7":"container7","footer":"footer","homepage":"homepage","page-header":"page-header","container1-jumbo":"container1-jumbo","landing-page":"landing-page","pink":"pink","sign-up-form-background":"sign-up-form-background","btn-submit-form":"btn-submit-form","first-name-error":"first-name-error","last-name-error":"last-name-error","email-error":"email-error","password-error":"password-error","password-confirm-error":"password-confirm-error","zipcode-name-error":"zipcode-name-error","required-text":"required-text","your-state":"your-state","left-side-row2":"left-side-row2","right-side-row2":"right-side-row2","container2-row2":"container2-row2","centered-text":"centered-text","container2-text":"container2-text","container3-row3":"container3-row3","square-photo":"square-photo","square-photo1":"square-photo1","square-photo2":"square-photo2","square-photo3":"square-photo3","photo-text":"photo-text","container4-row4":"container4-row4","circle":"circle","circle1":"circle1","circle2":"circle2","testimonial":"testimonial","container5-row4":"container5-row4","footer-text-landing-page":"footer-text-landing-page","square":"square","square-container":"square-container","square1":"square1","square2":"square2","square3":"square3","square4":"square4","square5":"square5","square6":"square6","search-container":"search-container","photo":"photo"};
 
 /***/ },
 /* 3 */,
@@ -35883,10 +35883,6 @@
 /* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// loop empty field validation?
-	// pwConfirm error only on enter/tab key?
-	// HTML & CSS: change error statement CSS to orange from red; change HTML for radio to 13-15, 16-18; make last name 'required' in HTML to show HTML5 validation?
-	
 	'use strict';
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -35991,6 +35987,9 @@
 	};
 	
 	module.exports = app;
+	
+	// loop empty field validation?
+	// pwConfirm error only on enter/tab key?
 
 /***/ },
 /* 184 */
