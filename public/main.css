@@ -34,6 +34,7 @@
 /* To Do: change more of the classes for the home-page containers and jumbotron so different from the landing page ones */
 /* To Do: play with size of carousel and captions, especially so looks right when mobile phone size;
 
+/* @import url("https://fonts.googleapis.com/css?family=Indie+Flower");  */
 /* Header on home page */
 header {
   /* background-color: #8E6CCD; */
@@ -154,9 +155,6 @@ div.footer {
   background-color: purple;
 }
 */
-/* To Do: sync CSS to final HTML; Montserrat font; check browsers; fonts em or px -->
-
-@import url("https://fonts.googleapis.com/css?family=Indie+Flower");  */
 /* ROW 1 properties */
 .container1-jumbo {
   padding: 20px;
@@ -165,11 +163,9 @@ div.footer {
   overflow: hidden;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  */
 }
 
 .jumbotron.landing-page {
@@ -262,6 +258,9 @@ button.btn-submit-form {
 .square-photo1 {
   background-image: url("/images/46751907.jpg");
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   overflow: hidden;
   background-repeat: no-repeat;
 }
@@ -269,6 +268,9 @@ button.btn-submit-form {
 .square-photo2 {
   background-image: url("/images/4755400.jpg");
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   overflow: hidden;
   background-repeat: no-repeat;
 }
@@ -276,6 +278,9 @@ button.btn-submit-form {
 .square-photo3 {
   background-image: url("/images/48458965.jpg");
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   overflow: hidden;
   background-repeat: no-repeat;
 }
@@ -345,6 +350,21 @@ ul {
   padding: 20px 0px 20px 0px;
   margin: 20px 0px 20px 0px;
   text-align: center;
+}
+
+blockquote.style3 {
+  font: 24px/30px normal Tahoma, sans-serif;
+  padding-top: 22px;
+  margin: 5px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: 65px;
+}
+
+blockquote.style3 span {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 h1 {
