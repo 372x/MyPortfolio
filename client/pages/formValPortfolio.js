@@ -57,7 +57,7 @@ var app = {
       if (password === '') {
         $('.password-error').text('Please enter your password.');
       } else if (password.length < 8) {
-        $('.password-error').text('Short passwords are easy to guess.  Try one with at least 8 characters.');
+        $('.password-error').text('Short passwords are easy to guess. Try one with at least 8 characters.');
       } else if (!OKpassword) {
         $('.password-error').text('Please include at least one number, one lowercase letter, one uppercase letter, and one of these special characters: $ # @ % * & ! ?');
       }
