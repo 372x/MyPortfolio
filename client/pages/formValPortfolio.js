@@ -23,14 +23,14 @@ var app = {
       var passwordConfirm = $('#password-confirm').val();
       var zip = $('#zipcode').val();
 
-      var reName = /^[a-zA-Z]{1,40}[a-zA-Z--- ]{1,40}$/;
+      var reName = /^[a-zA-Z]{1,}[a-zA-Z\ \-]{1,}$/;
       var OKfirstName = reName.exec(firstName);
       var OKlastName = reName.exec(lastName);
 
-      var reEmail = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+[\.]+[a-zA-Z]{2,40}$/;
+      var reEmail = /^[a-zA-Z0-9\-]+@[a-zA-Z0-9\-]+[\.][a-zA-Z]{2,}$/;
       var OKemail = reEmail.exec(email);
       
-      var rePassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!#%*?&])[A-Za-z\d$@$!%#*?&]{8,}$/;
+      var rePassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!#%*?])[A-Za-z\d@$!#%*?]{8,}$/;
       var OKpassword = rePassword.exec(password);
 
       var reZip = /^[0-9]{5}$/;
