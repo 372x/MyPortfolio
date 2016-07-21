@@ -6,11 +6,11 @@
 
 
 /* Header on home page */
-header {
-  /* background-color: #8E6CCD; */
+/* header {
+  background-color: #8E6CCD;
   padding: 30px;
   margin: 30px 0 30px 20px;
-}
+}  */
 
 /* Jumbotron on home page */
 .jumbotron.home-page {
@@ -69,24 +69,25 @@ a.btn-homepage {
 
 /* OLD CSS for OLD home page HTML: */
 
-div.page-header {
+/* div.page-header {
   position: absolute;
   z-index: 1;
   margin-left: 20px;
   top: 0;
   color: white;
-}
+} */
 
 /* @navbar-default {
   color:blue;
 } */
 
-nav {
-  position: absolute;
+/* nav {
+  color: white !important;
+  position: relative;
   z-index: 2;
   top: 120px;
-  margin-left: 20px;
-}
+  margin-left: 20px;  
+} */
 
 /*
 main {
