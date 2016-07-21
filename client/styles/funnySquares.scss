@@ -21,33 +21,33 @@ h1 {
 	display: inline-block;
 }
 
-.square1:hover {
+.square0:hover {
 	transform: skewX(45deg);
 	transition: transform .5s;
 }
 
-.square2:hover {
+.square1:hover {
 	transform: rotate(45deg);
 	transition: transform .5s;
 }
 
-.square3:hover {
+.square2:hover {
 	transform: scale(.8, .5);
 	transition: transform .5s;
 }
 
-.square4:hover {
+.square3:hover {
 	transform: rotateY(745deg) rotateX(45deg);
 	transition: transform .5s;
 }
 
-.square5:hover {
+.square4:hover {
 	-webkit-transform: rotateX(45deg);
 	transform: rotateX(45deg);
 	transition: transform .5s;
 }
 
-.square6:hover {
+.square5:hover {
 	transform: translate3d(20px, 50px, 100px);  /* move it this far X, Y, Z */
 	transition: transform .5s;
 }
