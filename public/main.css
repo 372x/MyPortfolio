@@ -33,18 +33,21 @@
 
 /* To Do: change more of the classes for the home-page containers and jumbotron so different from the landing page ones */
 /* @import url("https://fonts.googleapis.com/css?family=Indie+Flower");  */
-/* 
 .navbar.navbar-default {
   margin-bottom: 0px !important;
   /* background-color: #8E6CCD !important;
   color: white !important; 
-}  */
+  FF6D97  FF1169   281EFF   E8A065   FFB06F  1EC0FF  77C0FF
+  */
+}
+
 /* Jumbotron on home page */
 .jumbotron.home-page {
   margin-top: 50px;
   padding: 20px;
-  background-color: #f69679 !important;
-  color: white !important;
+  /* background-color: #f69679 !important; */
+  background-color: #FF6D97 !important;
+  color: black !important;
 }
 
 a.btn-homepage {
@@ -59,6 +62,21 @@ a.btn-homepage {
 /* .jumbotron.jumbo-text {
   color: purple;
 }  */
+.background-text, .project-header {
+  /* margin: 40px;
+  padding-left: 30px;
+  padding-right: 30px; */
+  text-align: center;
+  color: black;
+  font-size: 2em;
+}
+
+.project-header {
+  border-bottom: 2px solid black;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
 /* Skill Sets on home page */
 .container2-row2-home {
   padding: 40px;
@@ -124,13 +142,15 @@ a.home-photo-link {
 /* Experience on home page*/
 .container7 {
   padding: 20px;
-  background-color: #f69679;
-  color: white;
+  /* background-color: #f69679; */
+  background-color: #FF6D97;
+  color: black;
 }
 
 .footer.homepage {
   padding: 10px;
   background-color: #8e6ccd;
+  /* background-color: #E8A065; */
   color: white;
 }
 
