@@ -32,14 +32,12 @@
 }
 
 /* To Do: change more of the classes for the home-page containers and jumbotron so different from the landing page ones */
-/* To Do: play with size of carousel and captions, especially so looks right when mobile phone size;
-
 /* @import url("https://fonts.googleapis.com/css?family=Indie+Flower");  */
-/* Header on home page */
-/* header {
-  background-color: #8E6CCD;
-  padding: 30px;
-  margin: 30px 0 30px 20px;
+/* 
+.navbar.navbar-default {
+  margin-bottom: 0px !important;
+  /* background-color: #8E6CCD !important;
+  color: white !important; 
 }  */
 /* Jumbotron on home page */
 .jumbotron.home-page {
@@ -61,22 +59,66 @@ a.btn-homepage {
 /* .jumbotron.jumbo-text {
   color: purple;
 }  */
-/* Carousel */
-.container-carousel {
-  display: block;
-  padding: 50px;
-  margin: 50px;
-}
-
-/* Didn't change font size
-.carousel-caption.h3 {
-  font-size: 100px;
-}  */
 /* Skill Sets on home page */
 .container2-row2-home {
   padding: 40px;
   background-color: #8e6ccd;
   color: white;
+}
+
+p.skill-sets {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.home-screenshots {
+  height: 200px;
+  width: 300px;
+  margin: auto;
+  border: 1px solid blue;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.landing-page-screenshot {
+  background-image: url("/images/landing-page-screenshot.png");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.form-validation-screenshot {
+  background-image: url("/images/form-screenshot.png");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.animations-screenshot {
+  background-image: url("/images/48458965.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+p.home-photo-label {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+a.home-photo-link {
+  text-decoration: underline;
 }
 
 /* Experience on home page*/
@@ -94,53 +136,7 @@ a.btn-homepage {
 
 /* #f9e3ca #8e6ccd #f69679*/
 /* OLD CSS for OLD home page HTML: */
-/* div.page-header {
-  position: absolute;
-  z-index: 1;
-  margin-left: 20px;
-  top: 0;
-  color: white;
-} */
-/* @navbar-default {
-  color:blue;
-} */
-/* nav {
-  color: white !important;
-  position: relative;
-  z-index: 2;
-  top: 120px;
-  margin-left: 20px;  
-} */
 /*
-main {
-  margin-top: 150px;
-}
-
-.main-image {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-}
-
-.thumbnail {
-  width: 300px;
-}
-
-.thumbnail .thumbnail1 {
-  margin-left: 30px;
-}
-
-.thumbnail-block {
-  width: 100%;
-  text-align: center;
-  margin-top: 100px;
-}
-
 .row3 {
   margin-top: 50px;   
 }
