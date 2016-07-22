@@ -96,6 +96,10 @@
 	
 	var _pagesPhotoSearch2 = _interopRequireDefault(_pagesPhotoSearch);
 	
+	var _pagesLandingPage = __webpack_require__(222);
+	
+	var _pagesLandingPage2 = _interopRequireDefault(_pagesLandingPage);
+	
 	(0, _jquery2['default'])(function () {
 	  // $('header').append(navbar);
 	  _componentsHeader2['default'].init();
@@ -128,6 +132,10 @@
 	
 	    case '/pages/formValPortfolio.html':
 	      _pagesFormValPortfolio2['default'].init();
+	      break;
+	
+	    case '/pages/landingPage.html':
+	      _pagesLandingPage2['default'].init();
 	      break;
 	
 	    case '/':
@@ -10009,7 +10017,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"todo-container":"todo-container","add-todo-container":"add-todo-container","col-md-10":"col-md-10","col-md-2":"col-md-2","navbar":"navbar","navbar-default":"navbar-default","jumbotron":"jumbotron","home-page":"home-page","btn-homepage":"btn-homepage","btn":"btn","span":"span","purple":"purple","background-text":"background-text","project-header":"project-header","container2-row2-home":"container2-row2-home","skill-sets":"skill-sets","home-screenshots":"home-screenshots","landing-page-screenshot":"landing-page-screenshot","form-validation-screenshot":"form-validation-screenshot","animations-screenshot":"animations-screenshot","home-photo-label":"home-photo-label","home-photo-link":"home-photo-link","container7":"container7","footer":"footer","homepage":"homepage","container1-jumbo":"container1-jumbo","landing-page":"landing-page","pink":"pink","sign-up-form-background":"sign-up-form-background","btn-submit-form":"btn-submit-form","first-name-error":"first-name-error","last-name-error":"last-name-error","email-error":"email-error","password-error":"password-error","password-confirm-error":"password-confirm-error","zipcode-name-error":"zipcode-name-error","required-text":"required-text","your-state":"your-state","container2-row2":"container2-row2","centered-text":"centered-text","container2-text":"container2-text","square-photo":"square-photo","square-photo1":"square-photo1","square-photo2":"square-photo2","square-photo3":"square-photo3","photo-text":"photo-text","container4-row4":"container4-row4","circle":"circle","circle1":"circle1","circle2":"circle2","testimonial":"testimonial","container5-row4":"container5-row4","footer-text-landing-page":"footer-text-landing-page","style3":"style3","funny-squares":"funny-squares","square":"square","square-container":"square-container","square0":"square0","square1":"square1","square2":"square2","square3":"square3","square4":"square4","square5":"square5","search-container":"search-container","photo":"photo"};
+	module.exports = {"todo-container":"todo-container","add-todo-container":"add-todo-container","col-md-10":"col-md-10","col-md-2":"col-md-2","navbar":"navbar","navbar-default":"navbar-default","jumbotron":"jumbotron","home-page":"home-page","btn-homepage":"btn-homepage","btn":"btn","span":"span","purple":"purple","background-text":"background-text","project-header":"project-header","container2-row2-home":"container2-row2-home","skill-sets":"skill-sets","home-screenshots":"home-screenshots","landing-page-screenshot":"landing-page-screenshot","form-validation-screenshot":"form-validation-screenshot","animations-screenshot":"animations-screenshot","home-photo-label":"home-photo-label","home-photo-link":"home-photo-link","container7":"container7","footer":"footer","homepage":"homepage","container1-jumbo":"container1-jumbo","landing-page":"landing-page","pink":"pink","sign-up-form-background":"sign-up-form-background","btn-submit-form":"btn-submit-form","first-name-error":"first-name-error","last-name-error":"last-name-error","email-error":"email-error","password-error":"password-error","password-confirm-error":"password-confirm-error","zipcode-name-error":"zipcode-name-error","required-text":"required-text","your-state":"your-state","container2-row2":"container2-row2","centered-text":"centered-text","container2-text":"container2-text","square-photo":"square-photo","square-photo1":"square-photo1","square-photo2":"square-photo2","square-photo3":"square-photo3","photo-text":"photo-text","container4-row4":"container4-row4","circle":"circle","circle1":"circle1","circle2":"circle2","testimonial":"testimonial","container5-row4":"container5-row4","footer-text-landing-page":"footer-text-landing-page","style3":"style3","funny-squares":"funny-squares","square":"square","square-container":"square-container","square0":"square0","square1":"square1","square2":"square2","square3":"square3","square4":"square4","square5":"square5"};
 
 /***/ },
 /* 3 */,
@@ -40836,7 +40844,7 @@
 /* 217 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/bootstrap.min.css\">\n<nav class=\"navbar navbar-default\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">Name Name</a>\n    </div>\n    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n      <ul class=\"nav navbar-nav\">\n        <li><a class=\"nav-item active\" role=\"menuitem\" href=\"/server/view.ejs\">Home</a></li>\n        <li class=\"nav-item\"><a role=\"menuitem\" href=\"/pages/formValPortfolio.html\">Landing Page</a></li>\n        <li class=\"nav-item\"><a role=\"menuitem\" href=\"/pages/formValPortfolio.html\">Form Validation</a></li>\n        <li class=\"nav-item\"><a role=\"menuitem\" href=\"/pages/todo.html\">Backbone Todo Application</a></li>\n        <li class=\"nav-item\"><a role=\"menuitem\" href=\"/pages/funnySquares.html\">CSS Animations</a></li>\n      </ul>\n    </div>\n  </div>\n</nav>\n";
+	module.exports = "\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/bootstrap.min.css\">\n<nav class=\"navbar navbar-default\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">Name Name</a>\n    </div>\n    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n      <ul class=\"nav navbar-nav\">\n        <li><a class=\"nav-item active\" role=\"menuitem\" href=\"/server/view.ejs\">Home</a></li>\n        <li class=\"nav-item\"><a role=\"menuitem\" href=\"/pages/landingPage.html\">Landing Page</a></li>\n        <li class=\"nav-item\"><a role=\"menuitem\" href=\"/pages/formValPortfolio.html\">Form Validation</a></li>\n        <li class=\"nav-item\"><a role=\"menuitem\" href=\"/pages/todo.html\">Backbone Todo Application</a></li>\n        <li class=\"nav-item\"><a role=\"menuitem\" href=\"/pages/funnySquares.html\">CSS Animations</a></li>\n      </ul>\n    </div>\n  </div>\n</nav>\n";
 
 /***/ },
 /* 218 */
@@ -40970,6 +40978,94 @@
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"photo\">\n  <img src=\"https://farm{{farm}}.static.flickr.com/{{server}}/{{id}}_{{secret}}_b.jpg\">   \n</div>\n";
+
+/***/ },
+/* 222 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	
+	var _jquery = __webpack_require__(1);
+	
+	var _jquery2 = _interopRequireDefault(_jquery);
+	
+	var app = {
+	  init: function init() {
+	    app.bindEvents();
+	    app.validateForm();
+	  },
+	
+	  bindEvents: function bindEvents() {
+	    (0, _jquery2['default'])('.btn').click(function () {
+	      (0, _jquery2['default'])('form').show('slow', 500);
+	    });
+	  },
+	
+	  validateForm: function validateForm() {
+	    (0, _jquery2['default'])('form').submit(function () {
+	      (0, _jquery2['default'])('.error').empty();
+	      var firstName = (0, _jquery2['default'])('#first').val();
+	      var lastName = (0, _jquery2['default'])('#last').val();
+	      var email = (0, _jquery2['default'])('#email').val();
+	      var password = (0, _jquery2['default'])('#password').val();
+	      var passwordConfirm = (0, _jquery2['default'])('#password-confirm').val();
+	      var zip = (0, _jquery2['default'])('#zipcode').val();
+	
+	      var reName = /^[a-zA-Z]{1,}[a-zA-Z\ \-]{1,}$/;
+	      var OKfirstName = reName.exec(firstName);
+	      var OKlastName = reName.exec(lastName);
+	
+	      var reEmail = /^[a-zA-Z0-9\-]+@[a-zA-Z0-9\-]+[\.][a-zA-Z]{2,}$/;
+	      var OKemail = reEmail.exec(email);
+	
+	      var rePassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!#%*?])[A-Za-z\d@$!#%*?]{8,}$/;
+	      var OKpassword = rePassword.exec(password);
+	
+	      var reZip = /^[0-9]{5}$/;
+	      var OKzip = reZip.exec(zip);
+	
+	      if (firstName === '') {
+	        (0, _jquery2['default'])('.first-name-error').text('Please enter your first name.');
+	      } else if (!OKfirstName) {
+	        (0, _jquery2['default'])('.first-name-error').text('Please enter a valid name.');
+	      }
+	
+	      if (lastName === '') {
+	        (0, _jquery2['default'])('.last-name-error').text('Please enter your last name.');
+	      } else if (!OKlastName) {
+	        (0, _jquery2['default'])('.last-name-error').text('Please enter a valid name.');
+	      }
+	
+	      if (email === '') {
+	        (0, _jquery2['default'])('.email-error').text('Please enter your email address.');
+	      } else if (!OKemail) {
+	        (0, _jquery2['default'])('.email-error').text('Please enter a valid email address.');
+	      }
+	
+	      if (password === '') {
+	        (0, _jquery2['default'])('.password-error').text('Please enter your password.');
+	      } else if (password.length < 8) {
+	        (0, _jquery2['default'])('.password-error').text('Short passwords are easy to guess. Try one with at least 8 characters.');
+	      } else if (!OKpassword) {
+	        (0, _jquery2['default'])('.password-error').text('Please include at least one number, one lowercase letter, one uppercase letter, and one of these special characters: $ # @ % * & ! ?');
+	      }
+	
+	      if (password !== passwordConfirm && password.length >= 8 && OKpassword) {
+	        (0, _jquery2['default'])('.password-confirm-error').text('This does not match your password.');
+	      }
+	
+	      if (!OKzip && zip !== '') {
+	        (0, _jquery2['default'])('.zipcode-name-error').text('Please enter a five-digit zip code.');
+	      }
+	
+	      return false;
+	    });
+	  }
+	};
+	
+	module.exports = app;
 
 /***/ }
 /******/ ]);

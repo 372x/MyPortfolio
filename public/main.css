@@ -439,23 +439,219 @@ h1.funny-squares {
 }
 
 /* @import 'D3ProjectTestDrive'; */
-.search-container .photo {
-  width: 100px;
-  height: 100px;
+/* @import 'photoSearch'; */
+/* ROW 1 properties */
+.container1-jumbo {
+  padding: 20px;
+  background-image: url("/images/mountains.jpg");
+  background-size: cover;
   overflow: hidden;
-  display: inline-block;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
-.search-container .photo img {
-  width: 100%;
+.jumbotron.landing-page {
+  padding: 20px;
+  width: 47%;
+  background-color: transparent !important;
+  margin-left: 90px;
 }
 
-/* without SASS:
-.search-container .photo img {
-	width: 100%;
+/* Jumbotron button */
+.btn.pink {
+  background-color: pink;
+  color: purple !important;
+  font-weight: bold;
 }
 
-SASS allows us to do this nesting of css; SASS is part of webpack */
+.btn.pink:hover {
+  background-color: #E80073;
+  color: white !important;
+}
+
+/* FORM properites */
+.sign-up-form-background {
+  background-color: #00BCFF;
+}
+
+form {
+  padding: 20px;
+  margin-left: 30px;
+}
+
+button.btn-submit-form {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #fff;
+  background-color: purple !important;
+  font-weight: bold;
+}
+
+.btn-submit-form:hover {
+  background-color: #D10CE8 !important;
+}
+
+.first-name-error, .last-name-error, .email-error, .password-error, .password-confirm-error, .zipcode-name-error {
+  color: #dd4b39;
+  font-weight: 600;
+}
+
+.required-text {
+  color: white;
+  margin-left: 7px;
+  font-weight: normal;
+}
+
+.your-state {
+  margin-right: 5px;
+}
+
+/* Row 2 properties */
+.container2-row2 {
+  padding: 40px;
+  background-color: green;
+  color: white;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.container2-text {
+  margin: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+
+/* Row 3 properties */
+.square-photo {
+  height: 200px;
+  width: 300px;
+  margin: auto;
+  border: 3px solid black;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.square-photo1 {
+  background-image: url("/images/46751907.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.square-photo2 {
+  background-image: url("/images/4755400.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.square-photo3 {
+  background-image: url("/images/48458965.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.photo-text {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+/* Row 4 properties */
+.container4-row4 {
+  padding: 20px;
+  background-color: green;
+  color: white;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: 2-px solid black;
+  background-color: white;
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+}
+
+.circle1 {
+  background-image: url("/images/testimonial1.jpg");
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.circle2 {
+  background-image: url("/images/testimonial2.jpg");
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.testimonial {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 1.25em;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+/* Row 5 properties */
+.container5-row4 {
+  background-color: #eee;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+}
+
+.footer-text-landing-page {
+  padding: 20px 0px 20px 0px;
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+}
+
+blockquote.style3 {
+  font: 24px/30px normal Tahoma, sans-serif;
+  padding-top: 22px;
+  margin: 5px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: 65px;
+}
+
+blockquote.style3 span {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
 video {
   height: 240px;
   width: 320px;

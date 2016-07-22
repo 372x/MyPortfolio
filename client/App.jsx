@@ -15,6 +15,7 @@ import main from 'components/main';
 import footer from 'components/footer';
 // import listTemplate from 'templates/accountList.html';
 import photoSearch from 'pages/photoSearch';
+import landingPage from 'pages/landingPage';
 
 
 $(function(){
@@ -49,7 +50,11 @@ $(function(){
 
     case '/pages/formValPortfolio.html':
       formValPortfolio.init();
-    break;  
+    break;
+
+    case '/pages/landingPage.html':
+      landingPage.init();
+    break;   
 
     case '/':
       // init the project javascript
