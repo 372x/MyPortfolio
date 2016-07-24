@@ -243,8 +243,16 @@ button.btn-submit-form {
   margin-right: 5px;
 }
 
+.animation-page {
+  margin-bottom: 240px;
+  padding: 20px;
+  text-align: center;
+}
+
 h1.funny-squares {
   color: red;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .square {
@@ -295,6 +303,12 @@ h1.funny-squares {
   transform: translate3d(20px, 50px, 100px);
   /* move it this far X, Y, Z */
   transition: transform .5s;
+}
+
+h4.animation-h4 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
 }
 
 /* @import 'D3ProjectTestDrive'; */
