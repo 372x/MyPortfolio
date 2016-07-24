@@ -5,18 +5,22 @@
 
 .navbar.navbar-default {
   margin-bottom: 0px !important;
-  /* background-color: #8E6CCD !important;
-  color: white !important; 
-  FF6D97  FF1169   281EFF   E8A065   FFB06F  1EC0FF  77C0FF
-  */
+  background-color: #FFF8EB !important; /* cream color */
+}
+
+div.home-page-row1-background {
+  background-color: #FF7B7C; /* pinkish-peach */
+}
+
+div.container.home-page-jumbo {
+  background-color: #FF7B7C; /* pinkish-peach */
 }
 
 /* Jumbotron on home page */
 .jumbotron.home-page {
   margin-top: 50px;
   padding: 20px;
-  /* background-color: #f69679 !important; */
-  background-color: #FF6D97 !important;
+  background-color: transparent !important;
   color: black !important;
 }
 
@@ -29,9 +33,9 @@ a.btn-homepage {
   color: purple;
 }
 
-/* .jumbotron.jumbo-text {
-  color: purple;
-}  */
+.container3-row3-homepage {
+  background-color: #FFF8EB;
+}
 
 .background-text, .project-header {
   /* margin: 40px;
@@ -43,7 +47,6 @@ a.btn-homepage {
 }
 
 .project-header {
-  border-bottom: 2px solid black;
   margin-right: 50px;
   margin-left: 50px;
 }
@@ -51,7 +54,7 @@ a.btn-homepage {
 /* Skill Sets on home page */
 .container2-row2-home {
   padding: 40px;
-  background-color: #8e6ccd;
+  background-color: #247BCC; /*  mid-blue */
   color: white;
 }
 
@@ -113,16 +116,6 @@ a.home-photo-link {
 /* Experience on home page*/
 .container7 {
   padding: 20px;
-  /* background-color: #f69679; */
-  background-color: #FF6D97;
+  background-color: #FF7B7C; /* pinkish-peach */
   color: black;
 }
-
-.footer.homepage {
-  padding: 10px;
-  background-color: #8e6ccd;
- /* background-color: #E8A065; */
-  color: white;
-}
-
-/* #f9e3ca #8e6ccd #f69679*/
