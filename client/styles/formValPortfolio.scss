@@ -1,4 +1,9 @@
-/* To Do: media query on .form-detail-background for when goes below 490px width; */
+/* To Do: media query on .form-detail-background for when goes below 490px width; 
+@media (max-width: @screen-xs-max) { ... }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg-min) { ... }
+*/
 
 /* ROW 1: Jumbotron */
 .jumbotron.form-page {

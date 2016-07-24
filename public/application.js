@@ -92,11 +92,11 @@
 	
 	// import listTemplate from 'templates/accountList.html';
 	
-	var _pagesPhotoSearch = __webpack_require__(220);
+	var _pagesPhotoSearch = __webpack_require__(221);
 	
 	var _pagesPhotoSearch2 = _interopRequireDefault(_pagesPhotoSearch);
 	
-	var _pagesLandingPage = __webpack_require__(222);
+	var _pagesLandingPage = __webpack_require__(223);
 	
 	var _pagesLandingPage2 = _interopRequireDefault(_pagesLandingPage);
 	
@@ -10017,7 +10017,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"todo-container":"todo-container","add-todo-container":"add-todo-container","col-md-10":"col-md-10","col-md-2":"col-md-2","navbar":"navbar","navbar-default":"navbar-default","jumbotron":"jumbotron","home-page":"home-page","btn-homepage":"btn-homepage","btn":"btn","span":"span","purple":"purple","background-text":"background-text","project-header":"project-header","container2-row2-home":"container2-row2-home","skill-sets":"skill-sets","home-screenshots":"home-screenshots","landing-page-screenshot":"landing-page-screenshot","form-validation-screenshot":"form-validation-screenshot","animations-screenshot":"animations-screenshot","home-photo-label":"home-photo-label","home-photo-link":"home-photo-link","container7":"container7","footer":"footer","homepage":"homepage","form-page":"form-page","container-form-page":"container-form-page","form-detail-background":"form-detail-background","form-detail-header":"form-detail-header","form-detail-subheader":"form-detail-subheader","form-detail-list":"form-detail-list","sign-up-form-val-background":"sign-up-form-val-background","btn-submit-form":"btn-submit-form","first-name-error":"first-name-error","last-name-error":"last-name-error","email-error":"email-error","password-error":"password-error","password-confirm-error":"password-confirm-error","zipcode-name-error":"zipcode-name-error","required-text":"required-text","your-state":"your-state","funny-squares":"funny-squares","square":"square","square-container":"square-container","square0":"square0","square1":"square1","square2":"square2","square3":"square3","square4":"square4","square5":"square5","container1-jumbo":"container1-jumbo","landing-page":"landing-page","pink":"pink","sign-up-form-background":"sign-up-form-background","container2-row2":"container2-row2","centered-text":"centered-text","container2-text":"container2-text","square-photo":"square-photo","square-photo1":"square-photo1","square-photo2":"square-photo2","square-photo3":"square-photo3","photo-text":"photo-text","container4-row4":"container4-row4","circle":"circle","circle1":"circle1","circle2":"circle2","testimonial":"testimonial","container5-row4":"container5-row4","footer-text-landing-page":"footer-text-landing-page","style3":"style3"};
+	module.exports = {"todo-container":"todo-container","add-todo-container":"add-todo-container","col-md-10":"col-md-10","col-md-2":"col-md-2","navbar":"navbar","navbar-default":"navbar-default","jumbotron":"jumbotron","home-page":"home-page","btn-homepage":"btn-homepage","btn":"btn","span":"span","purple":"purple","background-text":"background-text","project-header":"project-header","container2-row2-home":"container2-row2-home","skill-sets":"skill-sets","home-screenshots":"home-screenshots","landing-page-screenshot":"landing-page-screenshot","form-validation-screenshot":"form-validation-screenshot","animations-screenshot":"animations-screenshot","home-photo-label":"home-photo-label","home-photo-link":"home-photo-link","container7":"container7","footer":"footer","homepage":"homepage","form-page":"form-page","container-form-page":"container-form-page","form-detail-background":"form-detail-background","form-detail-header":"form-detail-header","form-detail-subheader":"form-detail-subheader","form-detail-list":"form-detail-list","sign-up-form-val-background":"sign-up-form-val-background","btn-submit-form":"btn-submit-form","first-name-error":"first-name-error","last-name-error":"last-name-error","email-error":"email-error","password-error":"password-error","password-confirm-error":"password-confirm-error","zipcode-name-error":"zipcode-name-error","required-text":"required-text","your-state":"your-state","funny-squares":"funny-squares","square":"square","square-container":"square-container","square0":"square0","square1":"square1","square2":"square2","square3":"square3","square4":"square4","square5":"square5","container1-jumbo":"container1-jumbo","landing-page":"landing-page","pink":"pink","sign-up-form-background":"sign-up-form-background","container2-row2":"container2-row2","centered-text":"centered-text","container2-text":"container2-text","square-photo":"square-photo","square-photo1":"square-photo1","square-photo2":"square-photo2","square-photo3":"square-photo3","photo-text":"photo-text","container4-row4":"container4-row4","circle":"circle","circle1":"circle1","circle2":"circle2","testimonial":"testimonial","container5-row4":"container5-row4","footer-text-landing-page":"footer-text-landing-page","style3":"style3","fixed-footer":"fixed-footer","footer-ul":"footer-ul"};
 
 /***/ },
 /* 3 */,
@@ -40884,15 +40884,16 @@
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
-	// import navbar from 'templates/navbar.html';
+	var _templatesFooterHtml = __webpack_require__(220);
+	
+	var _templatesFooterHtml2 = _interopRequireDefault(_templatesFooterHtml);
 	
 	var app = {
 	  init: function init() {
 	    app.render();
 	  },
 	  render: function render() {
-	    // $('footer').append(navbar);
-	    // event handler
+	    (0, _jquery2['default'])('footer').append(_templatesFooterHtml2['default']);
 	  }
 	};
 	
@@ -40900,6 +40901,12 @@
 
 /***/ },
 /* 220 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/bootstrap.min.css\">\n<footer>\n  <nav class=\"navbar navbar-default navbar-bottom\" role=\"navigation\">\n    <div class=\"container\">\n      <ul class=\"footer-ul\">\n        <li class=\"fixed-footer\">Find Me At:</li>\n        <a href=\"\"><li class=\"fixed-footer fixed-footer1\">github.com/372x</li></a>\n        <a href=\"\"><li class=\"fixed-footer fixed-footer2\">codepen.io/372x</li></a>\n        <a href=\"\"><li class=\"fixed-footer fixed-footer3\">linkedin/###</li></a>\n      </ul> \n    </div>\n  </nav>\n</footer>\n";
+
+/***/ },
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40914,7 +40921,7 @@
 	
 	var _handlebars2 = _interopRequireDefault(_handlebars);
 	
-	var _templatesFlickrImageHtml = __webpack_require__(221);
+	var _templatesFlickrImageHtml = __webpack_require__(222);
 	
 	var _templatesFlickrImageHtml2 = _interopRequireDefault(_templatesFlickrImageHtml);
 	
@@ -40974,13 +40981,13 @@
 	module.exports = app;
 
 /***/ },
-/* 221 */
+/* 222 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"photo\">\n  <img src=\"https://farm{{farm}}.static.flickr.com/{{server}}/{{id}}_{{secret}}_b.jpg\">   \n</div>\n";
 
 /***/ },
-/* 222 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';

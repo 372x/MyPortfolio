@@ -1,14 +1,13 @@
 
 import $ from 'jquery';
-// import navbar from 'templates/navbar.html';
+import footer from 'templates/footer.html';
 
 var app = {
   init: function(){
     app.render();
   },
   render: function(){
-   // $('footer').append(navbar);
-    // event handler
+    $('footer').append(footer);
   }
 };
 
