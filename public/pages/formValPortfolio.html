@@ -1,8 +1,10 @@
+<!-- To Do: modal? -->
 
-<!-- built using rows with Bootstrap -->
+<!-- built with Bootstrap -->
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -14,143 +16,91 @@
     <!-- Bootstrap Row 1: Jumbotron -->
   	<div class="container1-jumbo">
   	  <div class="row">
-  	    <div class="col-md-12">
-          <div class="jumbotron landing-page">
-  	        <h1 class="jumbo-text">Coding in the Rockies</h1>
-  	        <p>Summer Coding Camp for Teens</p>
-  	        <p><a class="btn btn-primary btn-lg pink" href="#" role="button">Sign Up Now!</a></p>
-  	      </div>
-  	      <div class="container-form">
-  	        <div class="row">
-  	          <div class="col-md-7">
-  	            <form action="" hidden role="form" class="sign-up-form sign-up-form-background">
-  	              <h1>Sign Up Now!</h1>
-  	              <div class="form-group">
-  	                <label for="first">First name<span class="required-text">*required</span></label>
-  	                <p class="error first-name-error"></p>
-  	                <input type="text" class="form-control" id="first" name="firstname" placeholder="First Name" autofocus/>
-  	              </div>
-  	              <div class="form-group">
-  	                <label for="last">Last name<span class="required-text">*required</span></label>
-  	                <p class="error last-name-error"></p>
-  	                <input type="text" class="form-control" id="last" placeholder="Last name"/>
-  	              </div>
-  	              <div class="form-group">
-  	                <label for="email">Email address<span class="required-text">*required</span></label>
-  	                <p class="error email-error"></p>
-  	                <input type="email" class="form-control" id="email" placeholder="Email address"/>
-  	              </div>
-  	              <div class="form-group">
-  	                <label for="password" class="password-label">Password: please include at least one number, one lowercase letter, one uppercase letter, and one of these special characters: $ # @ * ! ? %<span class="required-text">*required</span></label>
-  	                <p class="error password-error"></p>
-  	                <input type="password" class="form-control" id="password" placeholder="Password"/>
-  	              </div>
-  	              <div class="form-group">
-  	                <label for="password-confirm" class="password-confirm-label">Please confirm your password<span class="required-text">*required</span></label>
-  	                <p class="error password-confirm-error"></p>
-  	                <input type="password" class="form-control" id="password-confirm" placeholder="Please re-type your password here"/>
-  	              </div>
-  	              <div class="form-group">
-	                  <label for="radio">Age<span class="required-text">*required</span></label><br>
-	                  <p class="age-error"></p>
-	                  <input type="radio" id="under-thirteen" name="age" value="under-thirteen" checked>  13-15<br>
-	                  <input type="radio" name="age" value="thirteen-or-older">  16-18<br>
-  	              </div>
-  	              <div class="form-group">  
-  	                <label for="state" class="your-state" >State</label>
-  	                <select name="states">
-  	                  <option value="Colorado">Colorado</option>
-  	                  <option value="Wyoming">Wyoming</option>
-  	                  <option value="Utah">Utah</option>
-  	                </select>
-  	              </div>
-  	              <div class="form-group">
-  	                <label for="first">Zip code</label>
-  	                <p class="error zipcode-name-error"></p>
-  	                <input type="text" class="form-control" id="zipcode" name="zipcode" placeholder="Zip code"/>
-  	              </div>
-  	              <button type="submit" class="btn btn-primary btn-lg btn-submit-form" value="Submit" >Sign Up Here!</button>
-  	            </form>
-  	          </div>
-  	        </div>
-  	      </div>
-  	    </div>
-  	  </div>
-  	</div>
-    <!-- Bootstrap Row 2: Text -->  	  
-  	<div class="container2-row2">
-  	  <div class="row">
-  	    <div class="col-md-6 left-side-row2">
-  	      <!-- Bootstrap Row 2 left side -->
-  	      <p class="container2-text">Two-week coding camps from June through mid-August. First camp starts June 25, 2016!<p>
-  	    </div>
-  	    <div class="col-md-6 right-side-row2">
-  	      <!-- Bootstrap Row 2 right side -->
-  	      <div class="centered-text">
-  	        <p class="container2-text">Learn JavaScript, jQuery, HTML5, and CSS3. Build your own website!</p>
-  	      </div>  
-  	    </div>
-  	  </div>
-  	</div>
-    <!-- Bootstrap Row 3: Photos -->
-  	<div class="container3-row3">
-  	  <div class="row">
-  	    <div class="col-md-4">
-  	      <div class="square-photo square-photo1"></div>
-  	      <p class="photo-text">Small class sizes</p>
-  	    </div>
-  	    <div class="col-md-4 learn-more">
-  	      <div class="square-photo square-photo2"></div>
-  	      <p class="photo-text">Learn the latest technology</p>
-  	    </div>
-  	    <div class="col-md-4">
-  	      <div class="square-photo square-photo3"></div>
-  	      <p class="photo-text">Experienced instructors</p>
-  	    </div>
-  	  </div>
-  	</div>
-    <!-- Bootstrap Row 4: Testimonials -->
-  	<div class="container4-row4">
-  	  <div class="row">
-  	    <div class="col-md-3">
-  	      <div>
-  	        <div class="circle circle1"></div>
-  	      </div>
-  	    </div>
-  	    <div class="col-md-3">
-  	      <h1></h1>
-  	      <blockquote class="testimonial" ><span>"I made my own website! The camp was fun, and I made a lot of new friends. You should go, it's great. The teachers know a lot, and they'll work you hard, but you'll end up with some good skills."</span></blockquote>
-  	    </div>
-  	    <div class="col-md-3">
-  	      <div>
-  	        <div class="circle circle2"></div>
-  	      </div>
-  	    </div>
-  	    <div class="col-md-3">
-  	      <h1></h1>
-  	      <img src="" alt="" />
-  	      <blockquote class="testimonial" ><span>"It was intense, two weeks of studying, but it was worth it. Found some time for hiking and swimming in between classes, and my classmates were great. You should go. It's worth it."</span></blockquote>
-  	    </div>
-  	  </div>
-  	</div>
-    <!-- Bootstrap Row 5: Footer -->
-  	<div class="container5-row5">
-  	  <div class="row">
-  	    <div class="col-md-12">
-  	      <div class="footer-text-landing-page">
-  	        <ul class="unstyled">Coding in the Rockies
-  	          <li>New camp sessions every two weeks, starting June 25, 2016.</li>
-    	        <li>111 Fall River Road</li>
-    	        <li>Estes Park, CO 80222</li>
-    	        <li>www.CodingInTheRockies.com</li>
-  	        </ul>  
-  	        <ul class="unstyled contact-text">Contact us:
-  	          <li>800-555-5555</li>
-  	          <li>jane AT CodingInTheRockies DOT com</li>
-  	        </ul>   
-  	      </div>  
-  	    </div>
-  	  </div>
-  	</div>
+        <div class="col-md-12">
+          <div class="jumbotron form-page">
+            <h1 class="jumbo-text">Form Validation Using jQuery and Regular Expressions</h1>
+          </div>
+          <!-- Bootstrap Row 2: Purpose -->
+          <div class="container-form-page">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="form-detail-background container-form-instructions">
+                  <h3 id="form-detail-subheader" class="form-detail-subheader">The purpose of this project was to show error messages when the input to the various fields didn't match the parameters set. <a href="">Click here to see parameters for inputs.</h3></a>
+                  <h3 id="form-detail-subheader" class="form-detail-subheader">Click the 'Sign Up Now!' button and give it a try!</h3>
+          <!-- Bootstrap Row 3: Try it out! -->
+                  <!-- MODAL! -->
+<!--              <ul class="form-detail-list">
+                    <li>If you click on the WHAT button without entering anything into the required fields, error messages for each of those fields will appear.</li>
+                    <li>If you enter anything other than letters, spaces, or hyphens in the name fields, an error message with appear.</li>
+                    <li>The name fields require a letter as the first character entered.</li>
+                    <li>In the email field, if you enter text without an '@' and a '.', an error message will appear.</li>
+                    <li>The password field requires eight characters and will show an error if you enter anything less. A separate error will show if you have eight characters without having included an uppercase letter, a lowercase letter, a number, and a special character from the list shown on the form.</li>
+                    <li>The password confirm field will show an error if the text entered doesn't match the password in the previous field.</li>
+                    <li>The zip code requires five numbers and will show an error if something other than that is entered.</li>
+                    <li>This is front-end only. What you enter goes nowhere when you click on the WHAT button.</li>
+                  </ul>
+                  <h3 class="form-detail-subheader">Click the Sign Up button and give it a try!</h3>  -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Bootstrap Row 4: Form -->
+          <div class="container-form">
+            <div class="row">
+              <div class="col-md-7">
+                <form action="" role="form" class="sign-up-form sign-up-form-val-background">
+                  <h1>Sign Up Now!</h1>
+                  <div class="form-group">
+                    <label for="first">First name<span class="required-text">*required</span></label>
+                    <p class="error first-name-error"></p>
+                    <input type="text" class="form-control" id="first" name="firstname" placeholder="First Name"/>  <!-- removed autofocus for this page -->
+                  </div>
+                  <div class="form-group">
+                    <label for="last">Last name<span class="required-text">*required</span></label>
+                    <p class="error last-name-error"></p>
+                    <input type="text" class="form-control" id="last" placeholder="Last name"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email address<span class="required-text">*required</span></label>
+                    <p class="error email-error"></p>
+                    <input type="email" class="form-control" id="email" placeholder="Email address"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="password-label">Password: please include at least one number, one lowercase letter, one uppercase letter, and one of these special characters: $ # @ * ! ? %<span class="required-text">*required</span></label>
+                    <p class="error password-error"></p>
+                    <input type="password" class="form-control" id="password" placeholder="Password"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="password-confirm" class="password-confirm-label">Please confirm your password<span class="required-text">*required</span></label>
+                    <p class="error password-confirm-error"></p>
+                    <input type="password" class="form-control" id="password-confirm" placeholder="Please re-type your password here"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="radio">Age<span class="required-text">*required</span></label><br>
+                    <p class="age-error"></p>
+                    <input type="radio" id="under-thirteen" name="age" value="under-thirteen" checked>  13-15<br>
+                    <input type="radio" name="age" value="thirteen-or-older">  16-18<br>
+                  </div>
+                  <div class="form-group">  
+                    <label for="state" class="your-state" >State</label>
+                    <select name="states">
+                      <option value="Colorado">Colorado</option>
+                      <option value="Wyoming">Wyoming</option>
+                      <option value="Utah">Utah</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="first">Zip code</label>
+                    <p class="error zipcode-name-error"></p>
+                    <input type="text" class="form-control" id="zipcode" name="zipcode" placeholder="Zip code"/>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-lg btn-submit-form" value="Submit" >Sign Up Here!</button>
+                </form>
+              </div>
+            </div>
+          </div>        
+        </div>
+      </div>
+    </div>  
   </body>
 </html>
