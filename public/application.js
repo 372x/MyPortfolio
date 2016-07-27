@@ -40998,8 +40998,8 @@
 	  },
 	
 	  bindEvents: function bindEvents() {
-	    (0, _jquery2['default'])('.btn').click(function () {
-	      (0, _jquery2['default'])('form').show('slow', 500);
+	    (0, _jquery2['default'])('.btn-show-form').click(function () {
+	      (0, _jquery2['default'])('form').toggle(250);
 	    });
 	  },
 	

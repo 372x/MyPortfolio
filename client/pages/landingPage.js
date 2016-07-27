@@ -8,8 +8,8 @@ var app = {
   },
 
   bindEvents: function(){
-    $('.btn').click(function(){
-      $('form').show('slow', 500);
+    $('.btn-show-form').click(function(){
+      $('form').toggle(250);
     });
   },
 
