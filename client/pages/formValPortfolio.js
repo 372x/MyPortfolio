@@ -3,14 +3,7 @@ import $ from 'jquery';
 
 var app = {
   init: function(){
-    app.bindEvents();
     app.validateForm();
-  },
-
-  bindEvents: function(){
-    $('.btn').click(function(){
-      $('form').show('slow', 500);
-    });
   },
 
   validateForm: function(){

@@ -35901,19 +35901,7 @@
 	
 	var app = {
 	  init: function init() {
-	    //  app.bindEvents();
-	    app.popover();
 	    app.validateForm();
-	  },
-	
-	  /* bindEvents: function(){
-	      $('.btn').click(function(){
-	        $('form').show('slow', 500);
-	      });
-	    }, */
-	
-	  popover: function popover() {
-	    (0, _jquery2['default'])('[data-toggle="popover"]').popover();
 	  },
 	
 	  validateForm: function validateForm() {
