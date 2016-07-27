@@ -3,19 +3,14 @@ import $ from 'jquery';
 
 var app = {
   init: function(){
-//  app.bindEvents();
-    app.popover();
+    app.bindEvents();
     app.validateForm();
   },
 
-/* bindEvents: function(){
+  bindEvents: function(){
     $('.btn').click(function(){
       $('form').show('slow', 500);
     });
-  }, */
-
-  popover: function(){
-    $('[data-toggle="popover"]').popover();
   },
 
   validateForm: function(){
