@@ -40,6 +40,15 @@ h1.form-detail-header {
   margin-left: 30px; */
 }
 
+.required-parameters {
+/* float: right; */
+  text-align: center;
+}
+
+.form-detail-border {
+  border-top: 2px black solid;
+}
+
 ul.form-detail-list {
   list-style-type: inherit;  /* or can use disc */
   text-align: left;

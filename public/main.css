@@ -37,31 +37,22 @@
   margin-bottom: 0px !important;
   background-color: #FFF8EB !important;
   /* cream color */
-  /*   background-color: #f9e3ca !important;
-  color: white !important; 
-  FF6D97  FF1169   281EFF   E8A065   FFB06F  1EC0FF  77C0FF
-    26B9CC turquoise; 247BCC mid-blue; FF7B7C pinkish-peach;  FFF8EB lighter cream; E80CE0 dark purple; FFFBE0 cream; FF75E0 light pink; FF26E0 darker pink */
 }
 
 div.home-page-row1-background {
-  /*  background-color: #FF6D97; */
   background-color: #FF7B7C;
   /* pinkish-peach */
 }
 
 div.container.home-page-jumbo {
-  /*  background-color: #FF6D97; */
   background-color: #FF7B7C;
   /* pinkish-peach */
-  /*  margin: 0px; */
 }
 
 /* Jumbotron on home page */
 .jumbotron.home-page {
   margin-top: 50px;
   padding: 20px;
-  /* background-color: #f69679 !important;
-  background-color: #FF6D97 !important; */
   background-color: transparent !important;
   color: black !important;
 }
@@ -75,9 +66,6 @@ a.btn-homepage {
   color: purple;
 }
 
-/* .jumbotron.jumbo-text {
-  color: purple;
-}  */
 .container3-row3-homepage {
   background-color: #FFF8EB;
 }
@@ -92,7 +80,6 @@ a.btn-homepage {
 }
 
 .project-header {
-  /*  border-bottom: 2px solid black; */
   margin-right: 50px;
   margin-left: 50px;
 }
@@ -100,7 +87,6 @@ a.btn-homepage {
 /* Skill Sets on home page */
 .container2-row2-home {
   padding: 40px;
-  /*  background-color: #8e6ccd; */
   background-color: #247BCC;
   /*  mid-blue */
   color: white;
@@ -164,21 +150,11 @@ a.home-photo-link {
 /* Experience on home page*/
 .container7 {
   padding: 20px;
-  /* background-color: #f69679;
-  background-color: #FF6D97;  */
   background-color: #FF7B7C;
   /* pinkish-peach */
   color: black;
 }
 
-/*
-.footer.homepage {
-  padding: 10px;
-  background-color: #8e6ccd;
-  background-color: #E8A065;
-  color: white;
-} */
-/* #f9e3ca #8e6ccd #f69679*/
 /* To Do: media query on .form-detail-background for when goes below 490px width; 
 @media (max-width: @screen-xs-max) { ... }
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
@@ -218,6 +194,15 @@ h1.form-detail-header {
   text-align: center;
   /* padding: 20px;
   margin-left: 30px; */
+}
+
+.required-parameters {
+  /* float: right; */
+  text-align: center;
+}
+
+.form-detail-border {
+  border-top: 2px black solid;
 }
 
 ul.form-detail-list {
@@ -555,6 +540,7 @@ footer {
   left: 0;  */
 }
 
+/*
 .fixed-footer {
   display: inline-block;
   margin-left: 50px;
@@ -564,48 +550,52 @@ footer {
 
 @media only screen and (max-width: 992px) {
   .fixed-footer {
-    margin-right: 35px;
+    margin-right: 35px;    
     margin-left: 35px;
   }
 }
 
 @media only screen and (max-width: 722px) {
   .fixed-footer {
-    margin-right: 25px;
+    margin-right: 25px;    
     margin-left: 25px;
   }
 }
 
 @media only screen and (max-width: 642px) {
   .fixed-footer {
-    margin-right: 15px;
+    margin-right: 15px;    
     margin-left: 15px;
   }
 }
 
 @media only screen and (max-width: 562px) {
   .fixed-footer {
-    margin-right: 10px;
+    margin-right: 10px;    
     margin-left: 10px;
   }
 }
 
 @media only screen and (max-width: 522px) {
   .fixed-footer {
-    margin-right: 5px;
+    margin-right: 5px;    
     margin-left: 5px;
   }
 }
 
 @media only screen and (max-width: 482px) {
   .fixed-footer {
-    margin-right: 50px;
+    margin-right: 50px;    
     margin-left: 50px;
   }
-}
-
+}   */
 .footer-ul {
   color: black;
+}
+
+.logo1 {
+  height: 30px;
+  /*  width: 60px; */
 }
 
 /* OR TRY USING IT AS A GRID!!! */
