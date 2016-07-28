@@ -1,9 +1,3 @@
-/* To Do: media query on .form-detail-background for when goes below 490px width; 
-@media (max-width: @screen-xs-max) { ... }
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
-@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
-@media (min-width: @screen-lg-min) { ... }
-*/
 
 /* ROW 1: Jumbotron */
 .jumbotron.form-page {
@@ -16,46 +10,51 @@
 /* ROW 2: Instructions */
 .container-form-page {
   margin-bottom: 30px;
-/*  margin-left: 30px;
-  margin-right: 30px;
-  padding: 20px; */
 }
 
 .form-detail-background {
   background-color: #f69679;
   padding: 20px;
-/*  margin-left: 30px; */
   border-radius: 25px;
   margin-left: 90px;
   margin-right: 60px;
 }
 
-h1.form-detail-header {
-  color: blue;
-}
-
 #form-detail-subheader {
   text-align: center;
-  /* padding: 20px;
-  margin-left: 30px; */
 }
 
-.required-parameters {
-/* float: right; */
+button.required-parameters {
+  margin-top: 20px;
+}
+
+.button-center {
   text-align: center;
 }
-
-.form-detail-border {
+#form-detail-border {
   border-top: 2px black solid;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
 }
 
+div.text-align-left {
+  list-style-type: inherit;
+  text-align: left;
+  font-weight: normal;
+  padding: 0px;
+  margin-left: 10px;
+}
+
+/*
 ul.form-detail-list {
-  list-style-type: inherit;  /* or can use disc */
+  list-style-type: inherit;
   text-align: left;
   font-weight: normal;
   padding: 0px;
   margin: 0px;
 }
+*/
 
 /* ROW 3: Form */
 .sign-up-form-val-background {
