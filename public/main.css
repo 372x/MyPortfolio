@@ -534,13 +534,12 @@ blockquote.style3 span {
   background-position: bottom right;
 }
 
-footer {
-  /*  bottom: 0;
-  position: absolute;
-  left: 0;  */
-}
-
 /*
+footer {
+  bottom: 0;
+  position: absolute;
+  left: 0;
+}  */
 .fixed-footer {
   display: inline-block;
   margin-left: 50px;
@@ -548,6 +547,7 @@ footer {
   margin-top: 15px;
 }
 
+/*
 @media only screen and (max-width: 992px) {
   .fixed-footer {
     margin-right: 35px;    
@@ -594,8 +594,12 @@ footer {
 }
 
 .logo1 {
-  height: 30px;
+  height: 20px;
   /*  width: 60px; */
+}
+
+.logo2 {
+  height: 40px;
 }
 
 /* OR TRY USING IT AS A GRID!!! */
