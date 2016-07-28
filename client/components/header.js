@@ -8,7 +8,6 @@ var app = {
   },
   render: function(){
     $('header').append(navbar);
-    // event handler
   }
 };
 
