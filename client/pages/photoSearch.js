@@ -23,10 +23,9 @@ var app = {
   },
   doSearch: function(){
     var phrase = app.$input.val();
-    // AJAX request
-    $.ajax({   // asynchronous, which means we don't know when it will occur
+    $.ajax({
       url: 'https://api.flickr.com/services/rest',
-      method: 'GET',  // retrieves data, use all CAPS for the method
+      method: 'GET',
       data: {
         text: phrase,
         method: 'flickr.photos.search',
@@ -34,7 +33,7 @@ var app = {
         format: 'json',
         per_page: 30
       },
-      complete: function(response){   // could also use a success: function(){} or an error: function(error){}, but complete is best
+      complete: function(response){
         var text = response.responseText;
         text = text.slice(14, text.length - 1);
         var data = JSON.parse(text);
@@ -48,9 +47,6 @@ var app = {
     myPhotos.forEach(function(item){
       html = html + compiledTemplate(item);
     });
-    // var html = compiledTemplate(data.photos.photo[0]);
-    // append result to the .search-result div, but use .html, b/c append doesn't remove the old stuff
-    // .map would work, .each, _.each, _.map
     $('.search-results').html(html);
   }
 };
