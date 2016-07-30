@@ -6,15 +6,14 @@ import Handlebars from 'handlebars';
 
 var template;
 var app = {
-  init: function(){   // initializes i.e. starts us off
+  init: function(){
     template = Handlebars.compile(rawTemplate);
     app.render();
   },
   render: function(){
-    // display six squares
     var numberOfSquares = 6;
     var renderedHtml = '';
-    _.times(numberOfSquares, function(index){  // using 'times' avoids using a 'for loop'
+    _.times(numberOfSquares, function(index){
       renderedHtml += template({ id: index });
     });
     $('h1').after(renderedHtml);

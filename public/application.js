@@ -35874,16 +35874,8 @@
 	__webpack_require__(168);
 	
 	var app = {
-	  init: function init() {
-	    /*   app.render();
-	     },
-	     render: function(){
-	       $('.carousel').carousel();   */
-	  }
+	  init: function init() {}
 	};
-	
-	/*
-	$('.carousel').carousel();  */
 	
 	module.exports = app;
 
@@ -35995,16 +35987,13 @@
 	var template;
 	var app = {
 	  init: function init() {
-	    // initializes i.e. starts us off
 	    template = _handlebars2['default'].compile(_templatesFunnySquareHtml2['default']);
 	    app.render();
 	  },
 	  render: function render() {
-	    // display six squares
 	    var numberOfSquares = 6;
 	    var renderedHtml = '';
 	    _underscore2['default'].times(numberOfSquares, function (index) {
-	      // using 'times' avoids using a 'for loop'
 	      renderedHtml += template({ id: index });
 	    });
 	    (0, _jquery2['default'])('h1').after(renderedHtml);
@@ -40937,10 +40926,9 @@
 	  },
 	  doSearch: function doSearch() {
 	    var phrase = app.$input.val();
-	    // AJAX request
-	    _jquery2['default'].ajax({ // asynchronous, which means we don't know when it will occur
+	    _jquery2['default'].ajax({
 	      url: 'https://api.flickr.com/services/rest',
-	      method: 'GET', // retrieves data, use all CAPS for the method
+	      method: 'GET',
 	      data: {
 	        text: phrase,
 	        method: 'flickr.photos.search',
@@ -40949,7 +40937,6 @@
 	        per_page: 30
 	      },
 	      complete: function complete(response) {
-	        // could also use a success: function(){} or an error: function(error){}, but complete is best
 	        var text = response.responseText;
 	        text = text.slice(14, text.length - 1);
 	        var data = JSON.parse(text);
@@ -40963,9 +40950,6 @@
 	    myPhotos.forEach(function (item) {
 	      html = html + compiledTemplate(item);
 	    });
-	    // var html = compiledTemplate(data.photos.photo[0]);
-	    // append result to the .search-result div, but use .html, b/c append doesn't remove the old stuff
-	    // .map would work, .each, _.each, _.map
 	    (0, _jquery2['default'])('.search-results').html(html);
 	  }
 	};

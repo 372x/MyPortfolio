@@ -32,21 +32,17 @@
 }
 
 /* To Do: change more of the classes for the home-page containers and jumbotron so different from the landing page ones */
-/* @import url("https://fonts.googleapis.com/css?family=Indie+Flower");  */
 .navbar.navbar-default {
   margin-bottom: 0px !important;
   background-color: #FFF8EB !important;
-  /* cream color */
 }
 
 div.home-page-row1-background {
   background-color: #FF7B7C;
-  /* pinkish-peach */
 }
 
 div.container.home-page-jumbo {
   background-color: #FF7B7C;
-  /* pinkish-peach */
 }
 
 /* Jumbotron on home page */
@@ -71,9 +67,6 @@ a.btn-homepage {
 }
 
 .background-text, .project-header {
-  /* margin: 40px;
-  padding-left: 30px;
-  padding-right: 30px; */
   text-align: center;
   color: black;
   font-size: 2em;
@@ -88,7 +81,6 @@ a.btn-homepage {
 .container2-row2-home {
   padding: 40px;
   background-color: #247BCC;
-  /*  mid-blue */
   color: white;
 }
 
@@ -151,7 +143,6 @@ a.home-photo-link {
 .container7 {
   padding: 20px;
   background-color: #FF7B7C;
-  /* pinkish-peach */
   color: black;
 }
 
