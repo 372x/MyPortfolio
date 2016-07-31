@@ -32,33 +32,74 @@ h1.funny-squares {
 
 .square0:hover {
   transform: skewX(45deg);
+  -webkit-transform: skewX(45deg);
+  -moz-transform: skewX(45deg);
+  -ms-transform: skewX(45deg);
+  -o-transform: skewX(45deg);
   transition: transform .5s;
+  -webkit-transition: transform .5s;
+  -moz-transition: transform .5s;
+  -o-transition: transform .5s;
 }
 
 .square1:hover {
   transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   transition: transform .5s;
+  -webkit-transition: transform .5s;
+  -moz-transition: transform .5s;
+  -o-transition: transform .5s;
 }
 
 .square2:hover {
   transform: scale(.8, .5);
+  -webkit-transform: scale(.8, .5);
+  -moz-transform: scale(.8, .5);
+  -ms-transform: scale(.8, .5);
+  -o-transform: scale(.8, .5);
   transition: transform .5s;
+  -webkit-transition: transform .5s;
+  -moz-transition: transform .5s;
+  -o-transition: transform .5s;
 }
 
 .square3:hover {
   transform: rotateY(745deg) rotateX(45deg);
+  -webkit-transform: rotateY(745deg) rotateX(45deg);
+  -moz-transform: rotateY(745deg) rotateX(45deg);
+  -ms-transform: rotateY(745deg) rotateX(45deg);
+  -o-transform: rotateY(745deg) rotateX(45deg);
   transition: transform .5s;
+  -webkit-transition: transform .5s;
+  -moz-transition: transform .5s;
+  -o-transition: transform .5s;
 }
 
 .square4:hover {
-  -webkit-transform: rotateX(45deg);
   transform: rotateX(45deg);
+  -webkit-transform: rotateX(45deg);
+  -moz-transform: rotateX(45deg);
+  -ms-transform: rotateX(45deg);
+  -o-transform: rotateX(45deg);
   transition: transform .5s;
+  -webkit-transition: transform .5s;
+  -moz-transition: transform .5s;
+  -o-transition: transform .5s;
 }
 
 .square5:hover {
-  transform: translate3d(20px, 50px, 100px);  /* move it this far X, Y, Z */
+  transform: translate3d(20px, 50px, 100px);
+  -webkit-transform: translate3d(20px, 50px, 100px);
+  -moz-transform: translate3d(20px, 50px, 100px);
+  -ms-transform: translate3d(20px, 50px, 100px);
+  -o-transform: translate3d(20px, 50px, 100px);
   transition: transform .5s;
+  -webkit-transition: transform .5s;
+  -moz-transition: transform .5s;
+  -o-transition: transform .5s;
 }
 
 h4.animation-h4 {
