@@ -82,7 +82,7 @@ a.btn-homepage {
   padding: 40px;
   background-color: #247BCC;
   color: white;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 p.skill-sets {
@@ -145,6 +145,10 @@ a.home-photo-link {
   padding: 20px;
   background-color: #FF7B7C;
   color: black;
+}
+
+.homepage-buffer {
+  background-color: #247BCC;
 }
 
 /* ROW 1: Jumbotron */
