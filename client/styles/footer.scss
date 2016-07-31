@@ -1,61 +1,9 @@
-/*
-footer {
-  bottom: 0;
-  position: absolute;
-  left: 0;
-}  */
 
 .fixed-footer {
   display: inline-block;
-/*  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 15px;  */
   margin-top: 15px;
   text-align: vertical;
 }
-
-/*
-@media only screen and (max-width: 992px) {
-  .fixed-footer {
-    margin-right: 35px;    
-    margin-left: 35px;
-  }
-}
-
-@media only screen and (max-width: 722px) {
-  .fixed-footer {
-    margin-right: 25px;    
-    margin-left: 25px;
-  }
-}
-
-@media only screen and (max-width: 642px) {
-  .fixed-footer {
-    margin-right: 15px;    
-    margin-left: 15px;
-  }
-}
-
-@media only screen and (max-width: 562px) {
-  .fixed-footer {
-    margin-right: 10px;    
-    margin-left: 10px;
-  }
-}
-
-@media only screen and (max-width: 522px) {
-  .fixed-footer {
-    margin-right: 5px;    
-    margin-left: 5px;
-  }
-}
-
-@media only screen and (max-width: 482px) {
-  .fixed-footer {
-    margin-right: 50px;    
-    margin-left: 50px;
-  }
-}   */
 
 .footer-ul {
   color: black;
@@ -63,37 +11,14 @@ footer {
 
 .logo1 {
   height: 20px;
-/*  width: 60px; */
 }
 
 .logo2 {
-/*  height: 40px;  */
   height: 25px;  
-/*  width: 40px; */
 }
 
 li.copyright {
   font-size: .75em;
   font-weight: normal;
   padding-top: 5px;
-/*  float: left; */
 }
-
-/* OR TRY USING IT AS A GRID!!! */
-
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-/* Small devices (tablets, 768px and up)
-@media (min-width: @screen-sm-min) { ... }  */
-
-/* Medium devices (desktops, 992px and up) 
-@media (min-width: @screen-md-min) { ... }  */
-
-/* Large devices (large desktops, 1200px and up)
-@media (min-width: @screen-lg-min) { ... }
-
-@media (max-width: @screen-xs-max) { ... }
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
-@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
-@media (min-width: @screen-lg-min) { ... } */

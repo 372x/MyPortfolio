@@ -13,109 +13,113 @@
   <body>
     <header></header>
     <!-- Bootstrap Row 1: Jumbotron -->
-  	<div class="container1-jumbo">
-  	  <div class="row">
-        <div class="col-md-12">
-          <div class="jumbotron form-page">
-            <h1 class="jumbo-text">Form Validation Using jQuery and Regular Expressions</h1>
-          </div>
-          <!-- Bootstrap Row 2: Purpose -->
-          <div class="container-form-page">
-            <div class="row">
-              <div class="col-md-7">
-                <div class="form-detail-background container-form-instructions">
-                  <h3 id="form-detail-subheader" class="form-detail-subheader">The purpose of this project was to show error messages when the user input to the various fields didn't match the parameters set using regular expressions.</h3>              
-                  <!-- Modal with Input Parameters -->
-                  <div class="button-center" >
-                    <button type="button" class="btn btn-primary btn-lg required-parameters" data-toggle="modal" data-target="#myModal">Input Parameters
-                    </button>
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Form Input Parameters</h4>
-                          </div>
-                          <div class="modal-body text-align-left">
-                            <li>If you click on the 'Sign Up Here!' button without entering anything into the required fields, error messages for each of those fields will appear.</li>
-                            <li>If you enter anything other than letters, spaces, or hyphens in the name fields, an error message with appear.</li>
-                            <li>The name fields require a letter as the first character entered.</li>
-                            <li>In the email field, if you enter text without an '@' and a '.', an error message will appear.</li>
-                            <li>The password field requires eight characters and will show an error if you enter anything less. A separate error will show if you have eight characters without having included an uppercase letter, a lowercase letter, a number, and a special character from the list shown on the form.</li>
-                            <li>The password confirm field will show an error if the text entered doesn't match the password in the previous field.</li>
-                            <li>The zip code requires five numbers and will show an error if something other than that is entered.</li>
-                            <li>This is front-end only. What you enter goes nowhere when you click on the 'Sign Up Here!' button.</li>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Close</button>                
+    <main class="main">  <!-- main tags added -->
+    	<div class="container1-jumbo">
+    	  <div class="row">
+          <div class="col-md-12">
+            <div class="jumbotron form-page">
+              <h1 class="jumbo-text">Form Validation Using jQuery and Regular Expressions</h1>
+            </div>
+            <!-- Bootstrap Row 2: Purpose -->
+            <div class="container-form-page">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="form-detail-background container-form-instructions">
+                    <h3 id="form-detail-subheader" class="form-detail-subheader">The purpose of this project was to show error messages when the user input to the various fields didn't match the parameters set using regular expressions.</h3>              
+                    <!-- Modal with Input Parameters -->
+                    <div class="button-center" >
+                      <button type="button" class="btn btn-primary btn-lg required-parameters" data-toggle="modal" data-target="#myModal">Input Parameters
+                      </button>
+                      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title" id="myModalLabel">Form Input Parameters</h4>
+                            </div>
+                            <div class="modal-body text-align-left">
+                              <li>If you click on the 'Sign Up Here!' button without entering anything into the required fields, error messages for each of those fields will appear.</li>
+                              <li>If you enter anything other than letters, spaces, or hyphens in the name fields, an error message with appear.</li>
+                              <li>The name fields require a letter as the first character entered.</li>
+                              <li>In the email field, if you enter text without an '@' and a '.', an error message will appear.</li>
+                              <li>The password field requires eight characters and will show an error if you enter anything less. A separate error will show if you have eight characters without having included an uppercase letter, a lowercase letter, a number, and a special character from the list shown on the form.</li>
+                              <li>The password confirm field will show an error if the text entered doesn't match the password in the previous field.</li>
+                              <li>The zip code requires five numbers and will show an error if something other than that is entered.</li>
+                              <li>This is front-end only. What you enter goes nowhere when you click on the 'Sign Up Here!' button.</li>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Close</button>                
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <h3 id="form-detail-border" class="form-detail-subheader">Click the 'Sign Up Here!' button below and give it a try!</h3>
                   </div>
-                  <h3 id="form-detail-border" class="form-detail-subheader">Click the 'Sign Up Here!' button below and give it a try!</h3>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Bootstrap Row 4: Form -->
-          <div class="container-form">
-            <div class="row">
-              <div class="col-md-7">
-                <form action="" role="form" class="sign-up-form sign-up-form-val-background">
-                  <h1>Sign Up Now!</h1>
-                  <div class="form-group">
-                    <label for="first">First name<span class="required-text">*required</span></label>
-                    <p class="error first-name-error"></p>
-                    <input type="text" class="form-control" id="first" name="firstname" placeholder="First Name"/>  <!-- removed autofocus for this page -->
-                  </div>
-                  <div class="form-group">
-                    <label for="last">Last name<span class="required-text">*required</span></label>
-                    <p class="error last-name-error"></p>
-                    <input type="text" class="form-control" id="last" placeholder="Last name"/>
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email address<span class="required-text">*required</span></label>
-                    <p class="error email-error"></p>
-                    <input type="email" class="form-control" id="email" placeholder="Email address"/>
-                  </div>
-                  <div class="form-group">
-                    <label for="password" class="password-label">Password: please include at least one number, one lowercase letter, one uppercase letter, and one of these special characters: $ # @ * ! ? %<span class="required-text">*required</span></label>
-                    <p class="error password-error"></p>
-                    <input type="password" class="form-control" id="password" placeholder="Password"/>
-                  </div>
-                  <div class="form-group">
-                    <label for="password-confirm" class="password-confirm-label">Please confirm your password<span class="required-text">*required</span></label>
-                    <p class="error password-confirm-error"></p>
-                    <input type="password" class="form-control" id="password-confirm" placeholder="Please re-type your password here"/>
-                  </div>
-                  <div class="form-group">
-                    <label for="radio">Age<span class="required-text">*required</span></label><br>
-                    <p class="age-error"></p>
-                    <input type="radio" id="under-thirteen" name="age" value="under-thirteen" checked>  13-15<br>
-                    <input type="radio" name="age" value="thirteen-or-older">  16-18<br>
-                  </div>
-                  <div class="form-group">  
-                    <label for="state" class="your-state" >State</label>
-                    <select name="states">
-                      <option value="Colorado">Colorado</option>
-                      <option value="Wyoming">Wyoming</option>
-                      <option value="Utah">Utah</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="first">Zip code</label>
-                    <p class="error zipcode-name-error"></p>
-                    <input type="text" class="form-control" id="zipcode" name="zipcode" placeholder="Zip code"/>
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-lg btn-submit-form" value="Submit" >Sign Up Here!</button>
-                </form>
+            <!-- Bootstrap Row 4: Form -->
+            <div class="container-form">
+              <div class="row">
+                <div class="col-md-7">
+                  <form action="" role="form" class="sign-up-form sign-up-form-val-background">
+                    <h1>Sign Up Now!</h1>
+                    <div class="form-group">
+                      <label for="first">First name<span class="required-text">*required</span></label>
+                      <p class="error first-name-error"></p>
+                      <input type="text" class="form-control" id="first" name="firstname" placeholder="First Name"/>  <!-- removed autofocus for this page -->
+                    </div>
+                    <div class="form-group">
+                      <label for="last">Last name<span class="required-text">*required</span></label>
+                      <p class="error last-name-error"></p>
+                      <input type="text" class="form-control" id="last" placeholder="Last name"/>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email address<span class="required-text">*required</span></label>
+                      <p class="error email-error"></p>
+                      <input type="email" class="form-control" id="email" placeholder="Email address"/>
+                    </div>
+                    <div class="form-group">
+                      <label for="password" class="password-label">Password: please include at least one number, one lowercase letter, one uppercase letter, and one of these special characters: $ # @ * ! ? %<span class="required-text">*required</span></label>
+                      <p class="error password-error"></p>
+                      <input type="password" class="form-control" id="password" placeholder="Password"/>
+                    </div>
+                    <div class="form-group">
+                      <label for="password-confirm" class="password-confirm-label">Please confirm your password<span class="required-text">*required</span></label>
+                      <p class="error password-confirm-error"></p>
+                      <input type="password" class="form-control" id="password-confirm" placeholder="Please re-type your password here"/>
+                    </div>
+                    <div class="form-group">
+                      <label for="radio">Age<span class="required-text">*required</span></label><br>
+                      <p class="age-error"></p>
+                      <input type="radio" id="under-thirteen" name="age" value="under-thirteen" checked>  13-15<br>
+                      <input type="radio" name="age" value="thirteen-or-older">  16-18<br>
+                    </div>
+                    <div class="form-group">  
+                      <label for="state" class="your-state" >State</label>
+                      <select name="states">
+                        <option value="Colorado">Colorado</option>
+                        <option value="Wyoming">Wyoming</option>
+                        <option value="Utah">Utah</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="first">Zip code</label>
+                      <p class="error zipcode-name-error"></p>
+                      <input type="text" class="form-control" id="zipcode" name="zipcode" placeholder="Zip code"/>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-submit-form" value="Submit" >Sign Up Here!</button>
+                  </form>
+                </div>
               </div>
             </div>
-          </div>        
+            <div class="buffer container">  <!-- buffer added between content and sticky footer -->
+            </div>        
+          </div>
         </div>
       </div>
-    </div>
-    <footer></footer>
+    </main>
+    <footer class="footer"></footer>  <!-- class of footer added -->
   </body>
 </html>
