@@ -82,7 +82,7 @@ a.btn-homepage {
   padding: 40px;
   background-color: #247BCC;
   color: white;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 p.skill-sets {
@@ -246,10 +246,6 @@ button.btn-submit-form {
   margin: 50px;
 }
 
-/* NEW 
-.main {
-    min-height: calc(100vh - 100px); 
-}  */
 .animation-page {
   margin-bottom: 240px;
   padding: 20px;
