@@ -1,8 +1,9 @@
-var $ = require('jquery');
-import React, { PropTypes } from 'react';  // PropTypes start with CAP 
 
-var TodoItem = React.createClass({  // these are the properties for each todo
-  propTypes: {  // lowercase propTypes; this.props accesses anything in propTypes
+var $ = require('jquery');
+import React, { PropTypes } from 'react';
+
+var TodoItem = React.createClass({
+  propTypes: {
     data: PropTypes.shape({
       id: PropTypes.number,
       title: PropTypes.string,
@@ -10,7 +11,7 @@ var TodoItem = React.createClass({  // these are the properties for each todo
     }),
     controller: PropTypes.object
   },
-  render: function(){  // React puts event handlers in with the HTML; the checked={todo.completed} helps with checkboxes
+  render: function(){
     var todo = this.props.data;
 
     var title = <div className="col-sm-10 title" onClick={this.titleClick}>{todo.title}</div>;
@@ -21,7 +22,7 @@ var TodoItem = React.createClass({  // these are the properties for each todo
         </div>
       );
     }
-    return ( // React needs one containing-div; use single curly brackets rather than double; use className instead of class
+    return (
       <div>  
         <div className="col-sm-1">
           <input type="checkbox" checked={todo.completed} onChange={this.handleComplete}></input>
@@ -46,7 +47,7 @@ var TodoItem = React.createClass({  // these are the properties for each todo
   },
   titleClick: function(){
     var id = this.props.data.id;
-    this.props.controller.model.startEditing(id);  // this says 'hey model' and skips controller
+    this.props.controller.model.startEditing(id);
   },
   editKeypress: function(event){
     if ( event.which === 13 ){
@@ -58,5 +59,3 @@ var TodoItem = React.createClass({  // these are the properties for each todo
 });
 
 module.exports = TodoItem;
-
-// in React, usually put parens around 'return statement' == return ( return statement);

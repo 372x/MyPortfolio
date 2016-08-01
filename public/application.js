@@ -10038,15 +10038,9 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	// import _ from 'underscore';
-	// backbone relies on underscore and needs to come after it in the imports
-	
 	var _backbone = __webpack_require__(165);
 	
 	var _backbone2 = _interopRequireDefault(_backbone);
-	
-	// import Handlebars from 'handlebars';
-	// import lscache from 'lscache';
 	
 	var _pagesTodoReactTodoModel = __webpack_require__(167);
 	
@@ -10063,53 +10057,36 @@
 	__webpack_require__(168);
 	
 	var TodoControllerView = _backbone2['default'].View.extend({
-	  el: '.todo-container', // backbone automatically makes 'el' a '$el'// html element that has the class .container, refers to this DOM node; this is a jquery selector
+	  el: '.todo-container',
 	  model: _pagesTodoReactTodoModel2['default'],
 	  events: {
 	    'click .btn-add': 'addTodoItem'
 	  },
 	  initialize: function initialize() {
-	    this.model.fetch(); // fetch is an ajax request, so might take some time but render will happen right away
-	    // go fetch this model, and when you have it,render it
-	    // instead of 'this.render;''  use backbone feature that allows it to listen to a model
-	    // this.listenTo(this.model, 'change', this.render);  // backbone approach
-	    this.model.on('change', this.render, this); // instructor prefers this
-	  }, // the above line is important re: ajax and waiting for the asynchronous stuff to execute
+	    this.model.fetch();
+	    this.model.on('change', this.render, this);
+	  },
 	  render: function render() {
-	    // debugger;
-	    // render the todo items
 	    var todos = this.model.get('todos');
-	    var $ul = this.$el.find('.list-group'); // this.el is the DOM element, this.$el is the jquery element
+	    var $ul = this.$el.find('.list-group');
 	    $ul.html('');
 	    var controller = this;
 	    todos.forEach(function (todo) {
-	      // mpa executes this one time for everything in the array & returns new array; forEach is better for React because not expecting a return
 	      var $li = $('<li class="list-group-item row"></li>');
-	      $ul.append($li); // adds each li independently
-	      _reactDom2['default'].render(_react2['default'].createElement(_pagesTodoReactTodoView2['default'], { data: todo, controller: controller }), $li[0] // gets the original DOM node from jquery object; React otherwise is at odds with jquery
-	      );
-	      // have to always do a .html to replace content rather than .append
-	
-	      //    var view = new TodoItemView(todo, controller);
-	      //    $ul.append(view.$el);  // can't do an append inside a .mpa  // reading to and from the DOM is slow,and appending in writing to the DOM, and map is doing an append for every item in the todo
+	      $ul.append($li);
+	      _reactDom2['default'].render(_react2['default'].createElement(_pagesTodoReactTodoView2['default'], { data: todo, controller: controller }), $li[0]);
 	    });
-	  }, // render does all the visual parts
-	  // someFunction: function(){},
-	  // closeView: function(){} // not part of Backbone, these are event handlers we created
+	  },
 	  addTodoItem: function addTodoItem() {
-	    var $input = this.$el.find('.input-name'); // 'el' is the todo-container; el is the DOM node, $el wraps the DOM node in jquery
+	    var $input = this.$el.find('.input-name');
 	    var newTitle = $input.val();
 	    if (newTitle === '') {
 	      return;
-	    } // the'return' exits you out of this
+	    }
 	    this.model.addItem(newTitle);
-	    $input.val(''); // clears out value of input
-	    this.render(); // have to rerender to the change from adding the item
+	    $input.val('');
+	    this.render();
 	  },
-	  // removeItem: function(id){
-	  //  this.model.removeItem(id);  // id of what will be removed is passed to the model for removal
-	  //  this.render();  // have to rerender to see the change from removing the item
-	  // },
 	  itemCompleted: function itemCompleted(id, isCompleted) {
 	    this.model.itemCompleted(id, isCompleted);
 	    this.render();
@@ -10119,8 +10096,6 @@
 	    this.render();
 	  }
 	});
-	
-	// todoControllerView = new TodoControllerView();  // this calls 'initialize'
 	
 	module.exports = TodoControllerView;
 
@@ -33229,73 +33204,59 @@
 	
 	var _backbone2 = _interopRequireDefault(_backbone);
 	
-	// import lscache from 'lscache';
-	
 	// Model
+	
 	var $ = __webpack_require__(1);
 	window.jQuery = window.$ = $;
 	__webpack_require__(168);
 	
-	var TodoModel = _backbone2['default'].Model.extend({ // e.g. TodoModelClass
+	var TodoModel = _backbone2['default'].Model.extend({
 	  defaults: {
 	    todos: []
 	  },
-	  todoSchema: { // this schema affects all the data coming in and out of model
-	    id: 0, // gives a unique identifier to this
+	  todoSchema: {
+	    id: 0,
 	    title: '',
 	    completed: false,
 	    isEditing: false
 	  },
 	  fetch: function fetch() {
-	    var that = this; // pay attention to this, usually a reason for it because of a later 'this'; developers put this in like a clue
-	    // debugger;
-	    // var data = lscache.get('todos');
-	    // data = this.applySchema(data);
-	    // this.set('todos', data);  // this sets the value of the todos to the value of 'data'
-	    // this takes the data from lscachs and put it in our model
-	    $.ajax({ // this is all one big object that gets sent to AJAX, but we don't know when it will complete
+	    var that = this;
+	    $.ajax({
 	      url: '/api',
 	      method: 'GET',
 	      complete: function complete(response) {
-	        // new scope block where 'this' has a different meaning than above
 	        var dataString = response.responseText;
 	        var data = JSON.parse(dataString);
-	        data = that.applySchema(data); // apply schema to parsed string
-	        that.set('todos', data); // sets it into local model
+	        data = that.applySchema(data);
+	        that.set('todos', data);
 	      }
 	    });
 	  },
 	  save: function save() {
-	    // debugger;
-	    // var data = this.get('todos');
-	    // data = this.applySchema(data);
-	    // lscache.set('todos', data);
 	    var that = this;
-	    var todos = this.get('todos'); // can use 'this' here because inside the model, even though have already defined 'that' as 'this', therefore better to always use 'this' when you can, and fallback to 'that' only when needed
+	    var todos = this.get('todos');
 	    $.ajax({
 	      url: '/api',
 	      method: 'POST',
-	      data: { todos: JSON.stringify(todos) }, // assigns the array 'todos' and sets it as the 'todos' variable (object?)
+	      data: { todos: JSON.stringify(todos) },
 	      complete: function complete(response) {
 	        var dataString = response.responseText;
 	        var data = JSON.parse(dataString);
-	        data = that.applySchema(data); // apply schema to parsed string
-	        that.set('todos', data); // sets it into local model
+	        data = that.applySchema(data);
+	        that.set('todos', data);
 	        that.trigger('change');
 	      }
 	    });
 	  },
 	  applySchema: function applySchema(todos) {
 	    var data = todos;
-	    var schema = this.todoSchema; // classic Backbone bug: the 'this.todoSchema' is undefined because it hasn't been defined within this function.
-	    data = _underscore2['default'].isArray(todos) ? data : []; // shorthand if statement; stuff in parens is the condition to be evaluated for true or false.  If true, us the value after the '?', if false, use the stuff after the ':'
-	    // shorthand only for simple if else statement
-	    // ensuring this is an array
+	    var schema = this.todoSchema;
+	    data = _underscore2['default'].isArray(todos) ? data : [];
 	    data = data.map(function (todo, index) {
-	      // applies the enclosed function to each todo
-	      todo.id = index; // index of the array?
-	      return _underscore2['default'].defaults(todo, schema); // was: defaults(todo, this.todoSchema) // this is the output value
-	    }); // stores the mapped data back into data variable
+	      todo.id = index;
+	      return _underscore2['default'].defaults(todo, schema);
+	    });
 	    return data;
 	  },
 	  addItem: function addItem(newTitle) {
@@ -33306,31 +33267,28 @@
 	    this.save(); //
 	  },
 	  removeItem: function removeItem(id) {
-	    // takes the item out of the model and calls .save
 	    var todos = this.get('todos');
 	    todos.splice(id, 1);
 	    this.save();
 	  },
 	  itemCompleted: function itemCompleted(id, isCompleted) {
 	    var todos = this.get('todos');
-	    var item = _underscore2['default'].findWhere(todos, { id: id }); // the first id is not a variable, it's the first of a key value pair
+	    var item = _underscore2['default'].findWhere(todos, { id: id });
 	    item.completed = isCompleted;
 	    this.set('todos', todos);
 	    this.save();
 	  },
 	  editTitle: function editTitle(newTitle, id) {
-	    // if (newTitle.length > 0) {
 	    var todos = this.get('todos');
-	    var item = _underscore2['default'].findWhere(todos, { id: id }); // the first id is not a variable, it's the first of a key value pair
+	    var item = _underscore2['default'].findWhere(todos, { id: id });
 	    item.title = newTitle;
 	    item.isEditing = false;
 	    this.set('todos', todos);
 	    this.save();
-	    // }
 	  },
 	  startEditing: function startEditing(id) {
 	    var todos = this.get('todos');
-	    var item = _underscore2['default'].findWhere(todos, { id: id }); // the first id is not a variable, it's the first of a key value pair
+	    var item = _underscore2['default'].findWhere(todos, { id: id });
 	    item.isEditing = true;
 	    this.set('todos', todos);
 	    this.save();
@@ -35777,13 +35735,12 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	// PropTypes start with CAP
-	
 	var $ = __webpack_require__(1);
+	
 	var TodoItem = _react2['default'].createClass({
 	  displayName: 'TodoItem',
-	  // these are the properties for each todo
-	  propTypes: { // lowercase propTypes; this.props accesses anything in propTypes
+	
+	  propTypes: {
 	    data: _react.PropTypes.shape({
 	      id: _react.PropTypes.number,
 	      title: _react.PropTypes.string,
@@ -35792,7 +35749,6 @@
 	    controller: _react.PropTypes.object
 	  },
 	  render: function render() {
-	    // React puts event handlers in with the HTML; the checked={todo.completed} helps with checkboxes
 	    var todo = this.props.data;
 	
 	    var title = _react2['default'].createElement(
@@ -35807,27 +35763,25 @@
 	        _react2['default'].createElement('input', { type: 'text', className: 'form-control', defaultValue: todo.title, onChange: function () {}, onKeyPress: this.editKeypress })
 	      );
 	    }
-	    return (// React needs one containing-div; use single curly brackets rather than double; use className instead of class
+	    return _react2['default'].createElement(
+	      'div',
+	      null,
 	      _react2['default'].createElement(
 	        'div',
-	        null,
+	        { className: 'col-sm-1' },
+	        _react2['default'].createElement('input', { type: 'checkbox', checked: todo.completed, onChange: this.handleComplete })
+	      ),
+	      title,
+	      _react2['default'].createElement(
+	        'div',
+	        { className: 'col-sm-1' },
 	        _react2['default'].createElement(
-	          'div',
-	          { className: 'col-sm-1' },
-	          _react2['default'].createElement('input', { type: 'checkbox', checked: todo.completed, onChange: this.handleComplete })
-	        ),
-	        title,
-	        _react2['default'].createElement(
-	          'div',
-	          { className: 'col-sm-1' },
+	          'button',
+	          { type: 'button', 'aria-label': 'Close', onClick: this.handleClose },
 	          _react2['default'].createElement(
-	            'button',
-	            { type: 'button', 'aria-label': 'Close', onClick: this.handleClose },
-	            _react2['default'].createElement(
-	              'span',
-	              { 'aria-hidden': 'true' },
-	              '×'
-	            )
+	            'span',
+	            { 'aria-hidden': 'true' },
+	            '×'
 	          )
 	        )
 	      )
@@ -35844,7 +35798,7 @@
 	  },
 	  titleClick: function titleClick() {
 	    var id = this.props.data.id;
-	    this.props.controller.model.startEditing(id); // this says 'hey model' and skips controller
+	    this.props.controller.model.startEditing(id);
 	  },
 	  editKeypress: function editKeypress(event) {
 	    if (event.which === 13) {
@@ -35856,8 +35810,6 @@
 	});
 	
 	module.exports = TodoItem;
-	
-	// in React, usually put parens around 'return statement' == return ( return statement);
 
 /***/ },
 /* 182 */
@@ -40825,7 +40777,7 @@
 /* 217 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<!-- TO DO: toggle collapsed navbar, add 'front-end web development' to brand in navbar -->\n\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/bootstrap.min.css\">\n<nav class=\"navbar navbar-default\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">SL Sullivan</a>\n    </div>\n    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n      <ul class=\"nav navbar-nav\">\n        <li><a class=\"nav-item active\" role=\"menuitem\" href=\"/server/view.ejs\">Home</a></li>\n        <li class=\"nav-item\"><a role=\"menuitem\" href=\"/pages/landingPage.html\">Landing Page</a></li>\n        <li class=\"nav-item\"><a role=\"menuitem\" href=\"/pages/formValPortfolio.html\">Form Validation</a></li>\n<!--    <li class=\"nav-item\"><a role=\"menuitem\" href=\"/pages/todo.html\">Backbone Todo Application</a></li>  -->\n        <li class=\"nav-item\"><a role=\"menuitem\" href=\"/pages/funnySquares.html\">CSS Animations</a></li>\n      </ul>\n    </div>\n  </div>\n</nav>\n";
+	module.exports = "\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/bootstrap.min.css\">\n<nav class=\"navbar navbar-default\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">SL Sullivan</a>\n    </div>\n    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n      <ul class=\"nav navbar-nav\">\n        <li><a class=\"nav-item active\" role=\"menuitem\" href=\"/server/view.ejs\">Home</a></li>\n        <li class=\"nav-item\"><a role=\"menuitem\" href=\"/pages/landingPage.html\">Landing Page</a></li>\n        <li class=\"nav-item\"><a role=\"menuitem\" href=\"/pages/formValPortfolio.html\">Form Validation</a></li>\n        <li class=\"nav-item\"><a role=\"menuitem\" href=\"/pages/todo.html\">Backbone Todo Application</a></li>\n        <li class=\"nav-item\"><a role=\"menuitem\" href=\"/pages/funnySquares.html\">CSS Animations</a></li>\n      </ul>\n    </div>\n  </div>\n</nav>\n";
 
 /***/ },
 /* 218 */
