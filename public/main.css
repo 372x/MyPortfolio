@@ -31,7 +31,6 @@
   margin-bottom: 15px;
 }
 
-/* To Do: change more of the classes for the home-page containers and jumbotron so different from the landing page ones */
 .navbar.navbar-default {
   margin-bottom: 0px !important;
   background-color: #FFF8EB !important;
@@ -140,13 +139,14 @@ a.home-photo-link {
   text-decoration: underline;
 }
 
-/* Experience on home page*/
+/* Experience on home page */
 .container7 {
   padding: 20px;
   background-color: #FF7B7C;
   color: black;
 }
 
+/* Background buffer */
 .homepage-buffer {
   background-color: #247BCC;
 }
