@@ -44,8 +44,6 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// import all our styles and pages
-	
 	'use strict';
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -56,15 +54,9 @@
 	
 	__webpack_require__(2);
 	
-	// import todos from 'pages/todo-backbone';  // todos is what was app on the todo.js file
-	// import todos from 'pages/todo/todoController';  // todos is what was app on the todo.js file
-	// import TodoControllerView from 'pages/todo/todoController';  // todos is what was app on the todo.js file
-	
 	var _pagesTodoReactTodoController = __webpack_require__(6);
 	
 	var _pagesTodoReactTodoController2 = _interopRequireDefault(_pagesTodoReactTodoController);
-	
-	// import TodoListView from 'pages/todoReact/todoListView';
 	
 	var _pagesProject = __webpack_require__(182);
 	
@@ -90,8 +82,6 @@
 	
 	var _componentsFooter2 = _interopRequireDefault(_componentsFooter);
 	
-	// import listTemplate from 'templates/accountList.html';
-	
 	var _pagesPhotoSearch = __webpack_require__(221);
 	
 	var _pagesPhotoSearch2 = _interopRequireDefault(_pagesPhotoSearch);
@@ -101,18 +91,12 @@
 	var _pagesLandingPage2 = _interopRequireDefault(_pagesLandingPage);
 	
 	(0, _jquery2['default'])(function () {
-	  // $('header').append(navbar);
 	  _componentsHeader2['default'].init();
 	  _componentsMain2['default'].init();
 	  _componentsFooter2['default'].init();
-	  // what page are we on?
 	  var url = window.location.pathname;
 	
-	  // our first javascript router; better syntax than if statement;
-	  switch (url) {// switch statement; going to look for lots of values of 'url'; executes same as if statement, but better syntax, better-looking code
-	    // case '/pages/todo.html':  // takes place of if statement
-	    // todos.render();   // todos.init();
-	    // break;
+	  switch (url) {
 	
 	    case '/pages/project.html':
 	      _pagesProject2['default'].init();
@@ -146,23 +130,7 @@
 	    default:
 	      break;
 	  }
-	
-	  // if (url === 'pages/todo.html'){
-	  //	todos.init();
-	  // }
-	  // todos.init();
 	});
-	
-	// this file manages all the pages of our website
-
-	// Fancy Console Message for Developers only to see; it's all all pages if it's on app.jsx, can move to home page only
-	// console.log('============================');
-	// console.log('============================');
-	// console.log('===I am looking for a job===');
-	// console.log('============================');
-	// console.log('==========call me===========');
-	// console.log('============================');
-	// console.log('============================');
 
 /***/ },
 /* 1 */
