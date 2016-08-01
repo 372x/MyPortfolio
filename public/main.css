@@ -199,15 +199,6 @@ div.text-align-left {
   margin-left: 10px;
 }
 
-/*
-ul.form-detail-list {
-  list-style-type: inherit;
-  text-align: left;
-  font-weight: normal;
-  padding: 0px;
-  margin: 0px;
-}
-*/
 /* ROW 3: Form */
 .sign-up-form-val-background {
   background-color: #00BCFF;
@@ -359,7 +350,6 @@ h4.animation-h4 {
   margin-top: 30px;
 }
 
-/* ADDED */
 /* for footer to stick: */
 html {
   position: relative;
@@ -367,7 +357,6 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
   margin-bottom: 50px;
 }
 
@@ -375,9 +364,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 50px;
-  /* background-color: #f5f5f5; */
 }
 
 /* @import 'D3ProjectTestDrive'; */
@@ -414,7 +401,7 @@ body {
   color: white !important;
 }
 
-/* FORM properites */
+/* FORM properties */
 .sign-up-form-background {
   background-color: #00BCFF;
 }
