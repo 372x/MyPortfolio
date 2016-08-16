@@ -562,7 +562,8 @@ ul {
 
 .footer-text-landing-page {
   padding: 20px 0px 20px 0px;
-  margin: 20px 0px 20px 0px;
+  /*  margin: 20px 0px 20px 0px;  */
+  margin: 20px 0px 60px 0px;
   text-align: center;
 }
 
