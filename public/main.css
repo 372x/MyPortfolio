@@ -382,11 +382,18 @@ body {
   -o-background-size: cover;
 }
 
+/*
 .jumbotron.landing-page {
   padding: 20px;
   width: 47%;
   background-color: transparent !important;
   margin-left: 90px;
+} */
+.jumbotron.landing-page {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: transparent !important;
+  color: black !important;
 }
 
 /* Jumbotron button */
@@ -562,7 +569,6 @@ ul {
 
 .footer-text-landing-page {
   padding: 20px 0px 20px 0px;
-  /*  margin: 20px 0px 20px 0px;  */
   margin: 20px 0px 60px 0px;
   text-align: center;
 }
