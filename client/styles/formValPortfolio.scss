@@ -1,10 +1,19 @@
 
 /* ROW 1: Jumbotron */
+/*
 .jumbotron.form-page {
   padding: 20px;
   width: 47%;
   background-color: transparent !important;
   margin-left: 90px;
+} */
+
+.jumbotron.form-page {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: transparent !important;
+  color: black !important;
+  margin-left: 30px;  /* NEW */
 }
 
 /* ROW 2: Instructions */
@@ -16,8 +25,9 @@
   background-color: #f69679;
   padding: 20px;
   border-radius: 25px;
-  margin-left: 90px;
-  margin-right: 60px;
+  margin-left: 30px;
+/*  margin-left: 90px;
+  margin-right: 60px; */
 }
 
 #form-detail-subheader {
