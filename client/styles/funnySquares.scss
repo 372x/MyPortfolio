@@ -30,7 +30,7 @@ h1.funny-squares {
   display: inline-block;
 }
 
-.square0:hover {
+.square0:hover, .square0:active {
   transform: skewX(45deg);
   -webkit-transform: skewX(45deg);
   -moz-transform: skewX(45deg);

@@ -152,20 +152,12 @@ a.home-photo-link {
 }
 
 /* ROW 1: Jumbotron */
-/*
-.jumbotron.form-page {
-  padding: 20px;
-  width: 47%;
-  background-color: transparent !important;
-  margin-left: 90px;
-} */
 .jumbotron.form-page {
   margin-top: 50px;
   padding: 20px;
   background-color: transparent !important;
   color: black !important;
   margin-left: 30px;
-  /* NEW */
 }
 
 /* ROW 2: Instructions */
@@ -178,8 +170,6 @@ a.home-photo-link {
   padding: 20px;
   border-radius: 25px;
   margin-left: 30px;
-  /*  margin-left: 90px;
-  margin-right: 60px; */
 }
 
 #form-detail-subheader {
@@ -282,7 +272,7 @@ h1.funny-squares {
   display: inline-block;
 }
 
-.square0:hover {
+.square0:hover, .square0:active {
   transform: skewX(45deg);
   -webkit-transform: skewX(45deg);
   -moz-transform: skewX(45deg);
@@ -392,20 +382,12 @@ body {
   -o-background-size: cover;
 }
 
-/*
-.jumbotron.landing-page {
-  padding: 20px;
-  width: 47%;
-  background-color: transparent !important;
-  margin-left: 90px;
-} */
 .jumbotron.landing-page {
   margin-top: 50px;
   padding: 20px;
   background-color: transparent !important;
   color: black !important;
   margin-left: 30px;
-  /* NEW */
 }
 
 /* Jumbotron button */
