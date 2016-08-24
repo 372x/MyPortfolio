@@ -272,7 +272,7 @@ h1.funny-squares {
   display: inline-block;
 }
 
-.square0:hover, .square0:active {
+.square0:hover {
   transform: skewX(45deg);
   -webkit-transform: skewX(45deg);
   -moz-transform: skewX(45deg);
@@ -284,6 +284,7 @@ h1.funny-squares {
   -o-transition: transform .5s;
 }
 
+/* , .square0:active  */
 .square1:hover {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
